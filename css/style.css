@@ -91,8 +91,8 @@ ul{
   margin-left:12px;
 }
 
-/*トップページ 新着記事リスト*/
-#home_latestArticle_wrap{
+/*トップページ新着記事*/
+#home_latestArticle_wrapper{
   width:990px;
   margin:0 auto;
   padding-top:44px;
@@ -126,24 +126,59 @@ ul{
   height:104px;
 }
 
-.home_latestArticleList_headingWrap{
+.home_latestArticleList_statusWrapper{
   float:right;
   width:249px;
   padding-top:5px;
 }
 
-.home_latestArticleList_headingWrap h3{
+.home_latestArticleList_statusWrapper h3{
   font-size:16px;
 }
 
-.home_latestArticleList_headingWrap p{
+.home_latestArticleList_statusWrapper p{
   font-size:12px;
   color:#767676;
   margin-top:8px;
 }
 
-.home_latestArticleList_featureBanner img{
+#home_latestArticleList_featureBanner{
+  margin-top:20px;
+}
+
+#home_latestArticleList_featureBanner img{
   width:465px;
+}
+
+/*トップページ連載記事*/
+#home_seriesArticle_header,#home_seriesArticleContent_wrapper{
+  width:990px;
+  margin:0 auto;
+}
+
+#home_seriesArticle_header{
+  position:relative;
+}
+
+#home_seriesArticle_header p{
+  position:absolute;
+  top:5px;
+  right:15px;
+}
+
+#home_seriesArticle_background{
+  background-color:#3B33B8;
+  width:100%;
+  height:240px;
+}
+
+#home_seriesArticleContent_wrapper img{
+  float:left;
+}
+
+#home_seriesArticleList .verticalArticleCard{
+  float:left;
+  margin-left:12px;
 }
 
 /*共通*/
@@ -154,4 +189,47 @@ ul{
 
 .articleList_title{
   font-size:20px;
+}
+
+/*縦記事（小）*/
+.verticalArticleCard{
+  width:162px;
+}
+
+.verticalArticleCard_imageWrapper{
+  position:relative;
+  height:86px;
+  border-radius:4px 4px 0 0;
+}
+
+.verticalArticleCard_imageWrapper img{
+  width:162px;
+  height:86px;
+}
+
+.number_icon{
+  position:absolute;
+  left:0;
+  bottom:0;
+  background-color:#1a1a1a;
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+  padding:2px 6px;
+}
+
+.verticalArticleCard_statusWrapper{
+  padding:12px;
+  background-color:#fff;
+  border-radius:0 0 4px 4px;
+}
+
+.verticalArticleCard_title{
+  font-size:12px;
+}
+
+.verticalArticleCard_publishdate{
+  font-size:12px;
+  color:#767676;
+  margin-top:8px;
 }
