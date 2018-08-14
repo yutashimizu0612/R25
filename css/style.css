@@ -181,6 +181,85 @@ ul{
   margin-left:12px;
 }
 
+/*トップページカテゴリー*/
+/*全体*/
+#home_category_wrapper{
+  width:990px;
+  margin:0 auto;
+}
+
+/*カテゴリー別*/
+.home_categoryBlock{
+  padding:40px 0;
+}
+
+.home_categoryBlock_title{
+  float:left;
+}
+/*カテゴリー別メイン記事*/
+.home_categoryBlock_mainArticle{
+  width:436px;
+  margin-left:36px;
+  float:left;
+}
+
+.home_categoryBlock_mainArticle_imageWrapper img{
+  width:436px;
+  height:230px;
+}
+
+.home_categoryBlock_mainArticle_statusWrapper h2{
+  font-size:20px;
+  margin-top:8px;
+}
+
+.home_categoryBlock_mainArticle_subtitle{
+  font-size:14px;
+  font-weight:700;
+  color:#e1180d;
+  margin-top:16px;
+}
+
+/*カテゴリー別記事リスト*/
+.home_categoryBlock_articleList{
+  width:398px;
+  float:left;
+  margin-left:24px;
+}
+
+.home_categoryBlock_articleList .home_categoryBlock_articleListItem:nth-of-type(n+2){
+  padding-top:24px;
+}
+
+.home_categoryBlock_articleListItem_imageWrapper{
+  float:left;
+  width:182px;
+  height:96px;
+}
+
+.home_categoryBlock_articleListItem_imageWrapper img{
+  width:182px;
+  height:96px;
+}
+
+.home_categoryBlock_articleListItem_statusWrapper{
+  float:left;
+  width:200px;
+  margin-left:16px;
+}
+
+.home_categoryBlock_articleListItem_statusWrapper h3{
+  font-size:14px;
+  line-height:1.33;
+}
+
+/*トップページカテゴリーブロック内共通*/
+.home_categoryBlock_publishdate{
+  font-size:14px;
+  color:#767676;
+  margin:0;
+}
+
 /*共通*/
 .to_list{
   font-size:14px;
