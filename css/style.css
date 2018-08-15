@@ -259,32 +259,72 @@ ul{
   margin:0;
 }
 
-/*トップページアプリダウンロード*/
-#home_appDownload{
+/*アプリダウンロード*/
+#appDownload{
   width:990px;
   margin:0 auto;
   padding:20px 0;
   position:relative;
 }
 
-#home_appDownload_imageWrapper img{
+#appDownload_imageWrapper img{
   width:100%;
 }
 
-#home_appDownload_bannerWrapper{
+#appDownload_bannerWrapper{
   position:absolute;
+  top:215px;
   left:68px;
-  bottom:91px;
 
 }
 
-#home_appDownload_bannerWrapper img{
+#appDownload_bannerWrapper img{
   width:162px;
   height:48px;
 }
 
 #googleBanner{
   margin-left:15px;
+}
+
+/*フッター*/
+#footer{
+  background-color:#1a1a1a;
+  color:#fff;
+  padding-top:40px;
+  padding-bottom:80px;
+  text-align:center;
+}
+
+#footer_snsWrapper{
+  width:340px;
+  display:inline-block;
+}
+
+#footer_snsWrapper p{
+  font-size:12px;
+  font-weight:700;
+}
+
+#footer_linkWrapper{
+  width:340px;
+  display:inline-block;
+  text-align:left;
+}
+
+.footer_linkWrapper_linkListItem{
+  float:left;
+  font-size:12px;
+}
+
+#footer_linkWrapper p{
+  font-size:10px;
+}
+
+.footer_writerRecruit{
+  width:340px;
+  height:100px;
+  border-radius:4px;
 }
 
 /*共通*/
