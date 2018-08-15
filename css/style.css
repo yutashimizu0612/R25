@@ -227,11 +227,18 @@ ul{
   margin-left:24px;
 }
 
+.home_categoryBlock_articleListItem{
+  display:block;
+  width:398px;
+  height:96px;
+}
+
 .home_categoryBlock_articleList .home_categoryBlock_articleListItem:nth-of-type(n+2){
   padding-top:24px;
 }
 
 .home_categoryBlock_articleListItem_imageWrapper{
+  float:left;
   width:182px;
   height:96px;
 }
@@ -244,7 +251,7 @@ ul{
 .home_categoryBlock_articleListItem_statusWrapper{
   float:right;
   width:200px;
-  margin-left:16px;
+  margin-left:10px;
 }
 
 .home_categoryBlock_articleListItem_statusWrapper h3{
@@ -256,7 +263,7 @@ ul{
 .home_categoryBlock_publishdate{
   font-size:14px;
   color:#767676;
-  margin:0;
+  margin-top:8px;
 }
 
 /*アプリダウンロード*/
