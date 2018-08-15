@@ -232,7 +232,6 @@ ul{
 }
 
 .home_categoryBlock_articleListItem_imageWrapper{
-  float:left;
   width:182px;
   height:96px;
 }
@@ -243,7 +242,7 @@ ul{
 }
 
 .home_categoryBlock_articleListItem_statusWrapper{
-  float:left;
+  float:right;
   width:200px;
   margin-left:16px;
 }
@@ -258,6 +257,34 @@ ul{
   font-size:14px;
   color:#767676;
   margin:0;
+}
+
+/*トップページアプリダウンロード*/
+#home_appDownload{
+  width:990px;
+  margin:0 auto;
+  padding:20px 0;
+  position:relative;
+}
+
+#home_appDownload_imageWrapper img{
+  width:100%;
+}
+
+#home_appDownload_bannerWrapper{
+  position:absolute;
+  left:68px;
+  bottom:91px;
+
+}
+
+#home_appDownload_bannerWrapper img{
+  width:162px;
+  height:48px;
+}
+
+#googleBanner{
+  margin-left:15px;
 }
 
 /*共通*/
