@@ -1,0 +1,50 @@
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p,a,blockquote, pre, img, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, nav, section{
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration:none;
+}
+
+ul{
+  list-style: none;
+}
+
+.clearfix{
+  clear:both;
+}
+
+/*共通ヘッダー（トップページを除く）*/
+#header{
+  width:100%;
+  height:52px;
+  background-color:#e1180d;
+}
+
+#header_wrapper{
+  width:990px;
+  height:100%;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+#header_wrapper ul{
+  display:flex;
+}
+
+.R25_logo{
+  color:#fff;
+}
+
+#header_categoryMenuList li{
+  margin-left:48px;
+}
+
+#header_categoryMenuList li a{
+  color:#fff;
+  font-size:14px;
+}
+
