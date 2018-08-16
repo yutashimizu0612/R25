@@ -48,3 +48,33 @@ ul{
   font-size:14px;
 }
 
+/*カテゴリーページ_カテゴリーリスト*/
+#categoryArticleList_wrapper{
+  width:990px;
+  margin:0 auto;
+}
+
+#categoryTitle_wrapper{
+  margin-bottom:16px;
+}
+
+/*縦記事（大）*/
+.verticalArticle{
+  width:314px;
+}
+
+.verticalArticle_imageWrapper img{
+  width:314px;
+  height:164px;
+}
+
+.verticalArticle_title{
+  font-size:16px;
+  margin-top:12px;
+}
+
+.verticalArticle_statusWrapper{
+  font-size:14px;
+  margin-top:4px;
+  color:#767676;
+}
