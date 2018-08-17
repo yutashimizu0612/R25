@@ -208,7 +208,7 @@ ul{
   height:230px;
 }
 
-.home_categoryBlock_mainArticle_statusWrapper h2{
+.home_categoryBlock_mainArticle_headingWrapper h2{
   font-size:20px;
   margin-top:8px;
 }
@@ -248,13 +248,13 @@ ul{
   height:96px;
 }
 
-.home_categoryBlock_articleListItem_statusWrapper{
+.home_categoryBlock_articleListItem_headingWrapper{
   float:right;
   width:200px;
   margin-left:10px;
 }
 
-.home_categoryBlock_articleListItem_statusWrapper h3{
+.home_categoryBlock_articleListItem_headingWrapper h3{
   font-size:14px;
   line-height:1.33;
 }
@@ -371,17 +371,18 @@ ul{
   padding:2px 6px;
 }
 
-.verticalArticleCard_statusWrapper{
+.verticalArticleCard_headingWrapper{
   padding:12px;
+  height:116px;
   background-color:#fff;
   border-radius:0 0 4px 4px;
 }
 
-.verticalArticleCard_title{
+.verticalArticleCard_headingWrapper h3{
   font-size:12px;
 }
 
-.verticalArticleCard_publishdate{
+.verticalArticleCard_statusWrapper{
   font-size:12px;
   color:#767676;
   margin-top:8px;
