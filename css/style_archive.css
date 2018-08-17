@@ -49,18 +49,44 @@ ul{
 }
 
 /*カテゴリーページ_カテゴリーリスト*/
-#categoryArticleList_wrapper{
+#categoryPage_contentWrapper{
   width:990px;
   margin:0 auto;
+}
+
+#categoryArticleList_wrapper{
+  padding-top:40px;
+  padding-bottom:80px;
 }
 
 #categoryTitle_wrapper{
   margin-bottom:16px;
 }
 
+/*カテゴリーページ_新着記事リスト*/
+#categoryPage_latestArticleList_wrapper{
+  background-color:#f8f8f8;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
 /*縦記事（大）*/
+.verticalArticleList{
+  display:flex;
+  flex-wrap:wrap;
+}
+
 .verticalArticle{
   width:314px;
+}
+
+.verticalArticle:nth-child(3n-1){
+  padding-left:24px;
+  padding-right:24px;
+}
+
+.verticalArticle:nth-child(n+4){
+  padding-top:40px;
 }
 
 .verticalArticle_imageWrapper img{
