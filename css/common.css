@@ -1,0 +1,207 @@
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p,a,blockquote, pre, img, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, nav, section{
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration:none;
+}
+
+ul{
+  list-style: none;
+}
+
+.clearfix{
+  clear:both;
+}
+
+/*共通：ヘッダー（トップページを除く）*/
+#header{
+  width:100%;
+  height:52px;
+  background-color:#e1180d;
+}
+
+#header_wrapper{
+  width:990px;
+  height:100%;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+#header_wrapper ul{
+  display:flex;
+}
+
+.R25_logo{
+  color:#fff;
+}
+
+#header_categoryMenuList li{
+  margin-left:48px;
+}
+
+#header_categoryMenuList li a{
+  color:#fff;
+  font-size:14px;
+}
+
+
+/*共通：アプリダウンロード*/
+#appDownload{
+  width:990px;
+  margin:0 auto;
+  padding:20px 0;
+  position:relative;
+}
+
+#appDownload_imageWrapper img{
+  width:100%;
+}
+
+#appDownload_bannerWrapper{
+  position:absolute;
+  top:215px;
+  left:68px;
+
+}
+
+#appDownload_bannerWrapper img{
+  width:162px;
+  height:48px;
+}
+
+#googleBanner{
+  margin-left:15px;
+}
+
+/*共通：フッター*/
+#footer{
+  background-color:#1a1a1a;
+  color:#fff;
+  padding-top:40px;
+  padding-bottom:80px;
+  text-align:center;
+}
+
+#footer_snsWrapper{
+  width:340px;
+  display:inline-block;
+}
+
+#footer_snsWrapper p{
+  font-size:12px;
+  font-weight:700;
+}
+
+#footer_linkWrapper{
+  width:340px;
+  display:inline-block;
+  text-align:left;
+}
+
+.footer_linkWrapper_linkListItem{
+  float:left;
+  font-size:12px;
+}
+
+#footer_linkWrapper p{
+  font-size:10px;
+}
+
+.footer_writerRecruit{
+  width:340px;
+  height:100px;
+  border-radius:4px;
+}
+
+/*共通*/
+.to_list{
+  font-size:14px;
+  font-weight:700;
+}
+
+.whiteTitle{
+  font-size:20px;
+}
+
+/*縦記事（小）*/
+.verticalArticleCard{
+  width:162px;
+}
+
+.verticalArticleCard_imageWrapper{
+  position:relative;
+  height:86px;
+  border-radius:4px 4px 0 0;
+}
+
+.verticalArticleCard_imageWrapper img{
+  width:162px;
+  height:86px;
+}
+
+.number_icon{
+  position:absolute;
+  left:0;
+  bottom:0;
+  background-color:#1a1a1a;
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+  padding:2px 6px;
+}
+
+.verticalArticleCard_headingWrapper{
+  padding:12px;
+  height:116px;
+  background-color:#fff;
+  border-radius:0 0 4px 4px;
+}
+
+.verticalArticleCard_headingWrapper h3{
+  font-size:12px;
+}
+
+.verticalArticleCard_statusWrapper{
+  font-size:12px;
+  color:#767676;
+  margin-top:8px;
+}
+
+/*縦記事（大）*/
+.verticalArticleList{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.verticalArticle{
+  width:314px;
+}
+
+.verticalArticle:nth-child(3n-1){
+  padding-left:24px;
+  padding-right:24px;
+}
+
+.verticalArticle:nth-child(n+4){
+  padding-top:40px;
+}
+
+.verticalArticle_imageWrapper img{
+  width:314px;
+  height:164px;
+}
+
+.verticalArticle_title{
+  font-size:16px;
+  margin-top:12px;
+}
+
+.verticalArticle_statusWrapper{
+  font-size:14px;
+  margin-top:4px;
+  color:#767676;
+}

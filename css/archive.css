@@ -1,0 +1,21 @@
+/*カテゴリーページ_カテゴリーリスト*/
+#categoryPage_contentWrapper{
+  width:990px;
+  margin:0 auto;
+}
+
+#categoryArticleList_wrapper{
+  padding-top:40px;
+  padding-bottom:80px;
+}
+
+#categoryTitle_wrapper{
+  margin-bottom:16px;
+}
+
+/*カテゴリーページ_新着記事リスト*/
+#categoryPage_latestArticleList_wrapper{
+  background-color:#f8f8f8;
+  padding-top:40px;
+  padding-bottom:40px;
+}
