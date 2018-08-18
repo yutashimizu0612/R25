@@ -1,0 +1,33 @@
+/*単体記事ページ ヘッダー*/
+#articleImageWrapper img{
+  width:680px;
+  height:356px;
+}
+
+#articleContentsWrapper{
+  width:680px;
+  margin:0 auto;
+}
+
+#articleHeadingWrapper{
+  padding:20px 20px 0;
+}
+
+.articleSubtitle{
+  color:#e1180d;
+  font-size:16px;
+  font-weight:700;
+  line-height:1.5;
+}
+
+.articleTitle{
+  font-size:34px;
+  line-height:1.33;
+  margin-top:12px;
+}
+
+#articleStatusWrapper{
+  margin-top:12px;
+  color:#767676;
+  font-size:14px;
+}
