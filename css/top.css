@@ -138,6 +138,10 @@
 }
 
 /*トップページ連載記事*/
+#home_seriesArticle_wrapper{
+  padding-top:40px;
+}
+
 #home_seriesArticle_header,#home_seriesArticleContent_wrapper{
   width:990px;
   margin:0 auto;
@@ -159,12 +163,18 @@
   height:240px;
 }
 
-#home_seriesArticleContent_wrapper img{
-  float:left;
+#home_seriesArticleContent_wrapper{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#home_seriesArticleList{
+  display:flex;
 }
 
 #home_seriesArticleList .verticalArticleCard{
-  float:left;
   margin-left:12px;
 }
 
