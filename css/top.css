@@ -183,6 +183,7 @@
 #home_category_wrapper{
   width:990px;
   margin:0 auto;
+  margin-top:60px;
 }
 
 /*カテゴリー別*/
@@ -190,14 +191,14 @@
   padding:40px 0;
 }
 
-.home_categoryBlock_title{
-  float:left;
+.home_categoryArticle_wrapper{
+  display:flex;
 }
+
 /*カテゴリー別メイン記事*/
 .home_categoryBlock_mainArticle{
   width:436px;
   margin-left:36px;
-  float:left;
 }
 
 .home_categoryBlock_mainArticle_imageWrapper img{
@@ -220,7 +221,6 @@
 /*カテゴリー別記事リスト*/
 .home_categoryBlock_articleList{
   width:398px;
-  float:left;
   margin-left:24px;
 }
 
@@ -254,6 +254,12 @@
 .home_categoryBlock_articleListItem_headingWrapper h3{
   font-size:14px;
   line-height:1.33;
+}
+
+.home_categoryBlock .to_list{
+  margin-top:20px;
+  margin-left:auto;
+  text-align-last:right;
 }
 
 /*トップページカテゴリーブロック内共通*/
