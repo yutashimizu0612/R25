@@ -7,6 +7,10 @@ a{
   text-decoration:none;
 }
 
+a:visited{
+  color:black;
+}
+
 ul{
   list-style: none;
 }
@@ -128,7 +132,7 @@ ul{
   font-size:20px;
   background-color:black;
   color:#fff;
-  padding:5px;
+  padding:6px;
   font-weight:700;
 }
 
@@ -181,6 +185,7 @@ ul{
 .verticalArticleList{
   display:flex;
   flex-wrap:wrap;
+  margin-top:24px;
 }
 
 .verticalArticle{

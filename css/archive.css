@@ -28,3 +28,9 @@
   padding-top:40px;
   padding-bottom:40px;
 }
+
+#categoryPage_latestArticleList_wrapper .to_list{
+  margin-top:20px;
+  margin-left:auto;
+  text-align-last:right;
+}
