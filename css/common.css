@@ -15,8 +15,14 @@ ul{
   list-style: none;
 }
 
-.clearfix{
+.clearfix:after {
+  content:" ";
+  display:block;
   clear:both;
+}
+
+.clear{
+  overflow:hidden;
 }
 
 /*共通：ヘッダー（トップページを除く）*/
