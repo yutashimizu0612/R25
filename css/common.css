@@ -5,6 +5,7 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p,a,blockquote, pre, img,
 
 a{
   text-decoration:none;
+  cursor:pointer;
 }
 
 a:visited{
@@ -128,17 +129,25 @@ ul{
   border-radius:4px;
 }
 
-/*共通*/
-.to_list{
-  font-size:14px;
-  font-weight:700;
-}
-
+/*その他共通*/
 .whiteTitle{
   font-size:20px;
   background-color:black;
   color:#fff;
   padding:6px;
+  font-weight:700;
+}
+
+/*一覧ボタン*/
+.moreButton{
+  display:block;
+  margin-top:20px;
+  margin-left:auto;
+  text-align-last:right;
+}
+
+.to_list{
+  font-size:14px;
   font-weight:700;
 }
 
