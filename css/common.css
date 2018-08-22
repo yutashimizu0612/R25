@@ -7,10 +7,15 @@ a{
   text-decoration:none;
   cursor:pointer;
   color:inherit;
+  transition:opacity .3s;
 }
 
 a:visited{
   color:inherit;
+}
+
+a:hover{
+  opacity:.6;
 }
 
 ul{
@@ -125,7 +130,7 @@ ul.footer_linkWrapper_linkList{
   font-size:12px;
 }
 
-ul.footer_linkWrapper_linkList li:not(:first-child){
+ul.footer_linkWrapper_linkList a:not(:first-child){
   margin-left:16px;
 }
 
