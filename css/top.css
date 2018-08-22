@@ -37,13 +37,14 @@
 }
 
 #header_image{
+  float:left;
   width:560px;
   height:294px;
   object-fit:cover;
 }
 
 #pickup_heading{
-  float:right;
+  float:left;
   width:342px;
   height:294px;
   padding-right:48px;
@@ -82,7 +83,7 @@
 #home_latestArticle_wrapper{
   width:990px;
   margin:0 auto;
-  padding-top:44px;
+  padding-top:120px;
 }
 
 #home_latestArticleList_header{
