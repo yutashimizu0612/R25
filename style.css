@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*
+Theme Name:新R25
+Theme URI: http://orangeferret5.sakura.ne.jp/wp/
+Author: yutashimizu
+Author URI: http://orangeferret5.sakura.ne.jp/wp/
+Description: WordPress_新R25
+Version: 1.0
+*/
+@import url(css/normalize.css);
+@import url(css/single.css);
+@import url(css/archive.css);
+@import url(css/common.css);
+@import url(css/top.css);
