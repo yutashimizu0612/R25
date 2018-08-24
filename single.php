@@ -2,7 +2,8 @@
 <!-- 記事 -->
     <div id="articleWrapper">
       <div id="articleImageWrapper">
-        <img src="images/single.jpg">
+        <?php the_post_thumbnail('single_thumbnail',array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))); ?>
+        <!-- <img src="images/single.jpg"> -->
       </div><!-- #articleImageWrapper -->
      <div class="articleContentsWrapper">
       <div class="articleHeadingWrapper">
