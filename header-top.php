@@ -16,23 +16,11 @@
           </div><!-- #headerTitle -->
           <div id="headerTop_background">
             <div id="headerTop_content">
-                <ul id="headerTop_categoryMenuList">
-                  <li>
-                    <a href="https://r25.jp/category/business">仕事・ビジネス</a>
-                  </li>
-                  <li>
-                    <a href="https://r25.jp/category/society">社会・政治</a>
-                  </li>
-                  <li>
-                    <a href="https://r25.jp/category/money">経済・マネー</a>
-                  </li>
-                  <li>
-                    <a href="https://r25.jp/category/entertainment">芸能・エンタメ</a>
-                  </li>
-                  <li>
-                    <a href="https://r25.jp/category/life">ライフスタイル</a>
-                  </li>
-                </ul>
+              <?php wp_nav_menu(array(
+                'menu_id' => 'headerTop_categoryMenuList',
+                'theme_location' => 'place_global'
+                ));
+                ?>
               <div id="pickup_content" class="clearfix">
                 <a href="#">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/headerimage.jpg" id="header_image">

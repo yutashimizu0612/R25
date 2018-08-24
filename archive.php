@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>新R25_記事まとめ</title>
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/archive.css">
-  </head>
-  <body>
-<!-- 共通ヘッダー（トップページを除く） -->
-    <header id="header">
-      <div id="header_wrapper">
-        <a href="https://r25.jp/">
-          <h2 class="R25_logo">新R25</h2>
-        </a>
-        <ul id="header_categoryMenuList">
-          <li>
-            <a href=#>仕事・ビジネス</a>
-          </li>
-          <li>
-            <a href=#>社会・政治</a>
-          </li>
-          <li>
-            <a href=#>経済・マネー</a>
-          </li>
-          <li>
-            <a href=#>芸能・エンタメ</a>
-          </li>
-          <li>
-            <a href=#>ライフスタイル</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+<?php get_header(); ?>
 <!-- カテゴリーページ_カテゴリーリスト -->
     <div id="categoryPage_contentWrapper">
       <div id="categoryArticleList_wrapper">
@@ -225,5 +190,4 @@
           </a>
       </div><!-- #categoryPage_latestArticleList_wrapper -->
     </div><!-- #categoryPage_contentWrapper -->
-  </body>
-</html>
+<?php get_footer(); ?>

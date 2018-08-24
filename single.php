@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>新R25_投稿記事</title>
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/single.css">
-  </head>
-  <body>
-<!-- 共通ヘッダー（トップページを除く） -->
-    <header id="header">
-      <div id="header_wrapper">
-        <a href="https://r25.jp/">
-          <h2 class="R25_logo">新R25</h2>
-        </a>
-        <ul id="header_categoryMenuList">
-          <li>
-            <a href=#>仕事・ビジネス</a>
-          </li>
-          <li>
-            <a href=#>社会・政治</a>
-          </li>
-          <li>
-            <a href=#>経済・マネー</a>
-          </li>
-          <li>
-            <a href=#>芸能・エンタメ</a>
-          </li>
-          <li>
-            <a href=#>ライフスタイル</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+<?php get_header(); ?>
 <!-- 記事 -->
     <div id="articleWrapper">
       <div id="articleImageWrapper">
@@ -45,10 +10,10 @@
             「自然体でいたほうが、テレビで長く生き残れる」
           </p><!-- articleSubtitle -->
           <h2 class="articleTitle">
-            「キレイに枯れていきたい」マルチタレント・ふかわりょうの“力を抜いていく”キャリア論
+            <?php the_title(); ?>
           </h2>
         <div class="articleStatusWrapper">
-          <span class="articleCategoryName">仕事・ビジネス</span>
+          <span class="articleCategoryName"><?php the_category(); ?></span>
           <span class="articlePublishdate">2018.05.22  by 新R25編集部</span>
         </div><!-- articleStatusWrapper -->
       </div><!-- articleHeadingWrapper -->
@@ -57,28 +22,28 @@
       <ul class="articleBottom_sns">
         <li>
           <a href=#>
-            <img src="images/f-ogo_RGB_HEX-58.svg">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/f-ogo_RGB_HEX-58.svg">
           </a>
         </li>
         <li>
           <a href=#>
-            <img src="images/icons8-twitter-48.png">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/icons8-twitter-48.png">
           </a>
         </li>
         <li>
           <a href=#>
-            <img src="images/LINE_SOCIAL_Fukidashi_typeA.png">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/LINE_SOCIAL_Fukidashi_typeA.png">
           </a>
         </li>
         <li>
           <a href=#>
-            <img src="images/hatenabookmark-logomark.svg">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/hatenabookmark-logomark.svg">
           </a>
         </li>
       </ul>
       <div class="articleBottom_catchWrapper">
-        <span class="articleBottom_R25Logo">新R25</span>
-        <span class="articleBottom_catch">20代ビジネスマンのバイブル</span>
+        <span class="articleBottom_R25Logo"><?php bloginfo('name'); ?></span>
+        <span class="articleBottom_catch"><?php bloginfo('description'); ?></span>
       </div>
       <ul class="articleBottom_marketing">
         <li>
@@ -92,9 +57,7 @@
           </a>
         </li>
       </ul>
-
      </div><!-- #articleBottom_wrapper -->
      </div><!-- articleContentsWrapper -->
     </div><!-- #articleWrapper -->
-  </body>
-</html>
+<?php get_footer(); ?>

@@ -45,6 +45,6 @@
         </div><!-- #footer_linkWrapper -->
       </footer>
     </div><!-- #all_wrapper -->
-<?php wp_foooter(); ?>
+<?php wp_footer(); ?>
   </body>
 </html>

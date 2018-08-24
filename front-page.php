@@ -1,59 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>新R25_トップページ</title>
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/top.css">
-  </head>
-  <body>
-    <div id="all_wrap">
-<!-- トップページヘッダー -->
-      <header id="headerTop">
-          <div id="headerTitle">
-            <img src="images/mainicon.png">
-          </div><!-- #headerTitle -->
-          <div id="headerTop_background">
-            <div id="headerTop_content">
-                <ul id="headerTop_categoryMenuList">
-                  <li>
-                    <a href="https://r25.jp/category/business">仕事・ビジネス</a>
-                  </li>
-                  <li>
-                    <a href="https://r25.jp/category/society">社会・政治</a>
-                  </li>
-                  <li>
-                    <a href="https://r25.jp/category/money">経済・マネー</a>
-                  </li>
-                  <li>
-                    <a href="https://r25.jp/category/entertainment">芸能・エンタメ</a>
-                  </li>
-                  <li>
-                    <a href="https://r25.jp/category/life">ライフスタイル</a>
-                  </li>
-                </ul>
-              <div id="pickup_content" class="clearfix">
-                <a href="#">
-                  <img src="images/headerimage.jpg" id="header_image">
-                  <div id="pickup_heading">
-                    <p class="pickup_subtitle">
-                      日本の朝を変えるために会社を辞めた男
-                    </p>
-                    <h1 class="pickup_title">
-                      5時こーじが語る「朝活の魅力」が想像以上だった
-                    </h1>
-                    <ul class="pickup_status">
-                      <li class="pickup_category">ライフスタイル</li>
-                      <li class="pickup_publishdate">2018.08.13</li>
-                    </ul>
-                  </div><!-- #pickup_heading -->
-                </a>
-              </div><!-- #pickup_content -->
-            </div><!-- #headerTop_content -->
-          </div><!-- #headerTop_background -->
-      </header>
+<?php get_header('top'); ?>
 <!-- トップページ新着記事 -->
       <div id="home_latestArticle_wrapper" class="clearfix">
         <div id="home_latestArticleList_header">
@@ -64,7 +9,7 @@
           <div class="home_latestArticleList">
             <div class="home_latestArticleList_item">
               <a href="#">
-                <img src="images/home_latest_article_list1.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list1.jpg">
                 <div class="home_latestArticleList_statusWrapper">
                   <h3>「#小2の女子」宮川大輔の“足元コーデ”にドン引き… 今週話題のインスタまとめ</h3>
                   <p>2018.08.12</p>
@@ -73,7 +18,7 @@
             </div><!-- home_latestArticleList_item -->
             <div class="home_latestArticleList_item">
               <a href="#">
-                <img src="images/home_latest_article_list2.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list2.jpg">
                 <div class="home_latestArticleList_statusWrapper">
                   <h3>「誠にご苦労様です」ZOZO前澤社長がマスコミに皮肉。今週話題のツイッターまとめ</h3>
                   <p>2018.08.11</p>
@@ -82,7 +27,7 @@
             </div><!-- home_latestArticleList_item -->
             <div class="home_latestArticleList_item">
               <a href="#">
-                <img src="images/home_latest_article_list3.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list3.jpg">
                 <div class="home_latestArticleList_statusWrapper">
                   <h3>世界でたったの3900頭… 野生のトラはなぜ絶滅危惧種になってしまったのか？</h3>
                   <p>2018.07.27</p>
@@ -91,7 +36,7 @@
             </div><!-- home_latestArticleList_item -->
             <div id="home_latestArticleList_featureBanner">
               <a href="#">
-                <img src="images/feature_banner.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/feature_banner.jpg">
               </a>
             </div><!-- home_latestArticleList_featureBanner -->
           </div><!-- .home_latestArticleList -->
@@ -99,7 +44,7 @@
           <div class="home_latestArticleList">
             <div class="home_latestArticleList_item">
               <a href="#">
-                <img src="images/home_latest_article_list1.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list1.jpg">
                 <div class="home_latestArticleList_statusWrapper">
                   <h3>「#小2の女子」宮川大輔の“足元コーデ”にドン引き… 今週話題のインスタまとめ</h3>
                   <p>2018.08.12</p>
@@ -108,7 +53,7 @@
             </div><!-- home_latestArticleList_item -->
             <div class="home_latestArticleList_item">
               <a href="#">
-                <img src="images/home_latest_article_list2.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list2.jpg">
                 <div class="home_latestArticleList_statusWrapper">
                   <h3>「誠にご苦労様です」ZOZO前澤社長がマスコミに皮肉。今週話題のツイッターまとめ</h3>
                   <p>2018.08.11</p>
@@ -117,7 +62,7 @@
             </div><!-- home_latestArticleList_item -->
             <div class="home_latestArticleList_item">
               <a href="#">
-                <img src="images/home_latest_article_list3.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list3.jpg">
                 <div class="home_latestArticleList_statusWrapper">
                   <h3>世界でたったの3900頭… 野生のトラはなぜ絶滅危惧種になってしまったのか？</h3>
                   <p>2018.07.27</p>
@@ -126,7 +71,7 @@
             </div><!-- home_latestArticleList_item -->
             <div class="home_latestArticleList_item">
               <a href="#">
-                <img src="images/home_latest_article_list3.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list3.jpg">
                 <div class="home_latestArticleList_statusWrapper">
                   <h3>世界でたったの3900頭… 野生のトラはなぜ絶滅危惧種になってしまったのか？</h3>
                   <p>2018.07.27</p>
@@ -148,13 +93,13 @@
         <div id="home_seriesArticle_background">
           <div id="home_seriesArticleContent_wrapper">
             <a href="#">
-              <img src="images/seriesArticle_main.jpg" width="480" height="240">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/seriesArticle_main.jpg" width="480" height="240">
             </a>
             <div id="home_seriesArticleList">
               <div class="verticalArticleCard">
                 <a href="#">
                   <div class="verticalArticleCard_imageWrapper">
-                    <img src="images/seriesArticle_2.jpg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/seriesArticle_2.jpg">
                     <span class="number_icon">No.2</span>
                   </div><!-- verticalArticleCard_imageWrapper -->
                   <div class="verticalArticleCard_headingWrapper">
@@ -168,7 +113,7 @@
               <div class="verticalArticleCard">
                 <a href="#">
                   <div class="verticalArticleCard_imageWrapper">
-                    <img src="images/seriesArticle_1.jpg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/seriesArticle_1.jpg">
                     <span class="number_icon">No.1</span>
                   </div><!-- verticalArticleCard_imageWrapper -->
                   <div class="verticalArticleCard_headingWrapper">
@@ -188,12 +133,12 @@
         <div class="home_categoryBlock">
           <div class="home_categoryArticle_wrapper">
             <div class="home_categoryBlock_title">
-              <img src="images/home_categoryBlock_title_business.png">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_title_business.png">
             </div><!-- home_categoryBlock_title -->
             <div class="home_categoryBlock_mainArticle">
               <a href="#">
                 <div class="home_categoryBlock_mainArticle_imageWrapper">
-                  <img src="images/home_categoryBlock_mainArticle_image.jpg">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_mainArticle_image.jpg">
                 </div><!-- home_categoryBlock_mainArticle_imageWrapper -->
                 <div class="home_categoryBlock_mainArticle_headingWrapper">
                   <p class="home_categoryBlock_mainArticle_subtitle">どうすれば相手に「Yes」と言ってもらえるのか</p>
@@ -208,7 +153,7 @@
               <div class="home_categoryBlock_articleListItem">
                 <a href="#">
                   <div class="home_categoryBlock_articleListItem_imageWrapper">
-                    <img src="images/home_categoryBlock_articleListItem1.jpg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_articleListItem1.jpg">
                   </div><!-- home_categoryBlock_articleListItem_imageWrapper -->
                   <div class="home_categoryBlock_articleListItem_headingWrapper">
                     <h3>「バカにされてもやりたいこと」を選べ。マーケットバリューを高めるキャリアの描き方</h3>
@@ -221,7 +166,7 @@
               <div class="home_categoryBlock_articleListItem">
                 <a href="#">
                   <div class="home_categoryBlock_articleListItem_imageWrapper">
-                    <img src="images/home_categoryBlock_articleListItem2.jpg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_articleListItem2.jpg">
                   </div><!-- home_categoryBlock_articleListItem_imageWrapper -->
                   <div class="home_categoryBlock_articleListItem_headingWrapper">
                     <h3>映画の主人公も、“使命”には途中で気付く。やりたいことがない人のための転職入門</h3>
@@ -234,7 +179,7 @@
               <div class="home_categoryBlock_articleListItem">
                 <a href="#">
                   <div class="home_categoryBlock_articleListItem_imageWrapper">
-                    <img src="images/home_categoryBlock_articleListItem3.jpg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_articleListItem3.jpg">
                   </div><!-- home_categoryBlock_articleListItem_imageWrapper -->
                   <div class="home_categoryBlock_articleListItem_headingWrapper">
                     <h3>“ブランド人”になりたい編集部員のツイッターを、田端＆箕輪コンビがガチコンサル！</h3>
@@ -251,53 +196,4 @@
             </a>
         </div><!-- home_categoryBlock -->
       </div><!-- #home_category_wrapper -->
-<!-- アプリダウンロード -->
-      <div id="appDownload">
-        <div id="appDownload_imageWrapper">
-          <img src="images/home-app-download.jpg">
-        </div><!-- #appDownload_imageWrapper -->
-        <div id="appDownload_bannerWrapper">
-          <a href="https://itunes.apple.com/jp/app/id909585120">
-            <img src="images/ios-badge.png">
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=jp.co.cyberagent.spotlight&hl=ja" id="googleBanner">
-            <img src="images/android-badge.png">
-          </a>
-        </div><!-- #appDownload_bannerWrapper -->
-      </div><!-- #appDownload -->
-<!-- フッター -->
-      <footer id="footer">
-        <div id="footer_snsWrapper">
-          <p>新R25をフォローして新着記事を受け取ろう！</p>
-        </div><!-- #footer_snsWrapper -->
-        <div id="footer_linkWrapper">
-          <a href="https://r25.jp/" id="footer_linkTitle">新R25</a>
-          <ul class="footer_linkWrapper_linkList">
-            <a href="#">
-              <li>新R25とは？</li>
-            </a>
-            <a href="#">
-              <li>運用会社</li>
-            </a>
-            <a href="#">
-              <li>お問い合わせ</li>
-            </a>
-          </ul>
-          <ul class="footer_linkWrapper_linkList">
-            <a href="#">
-              <li>プライバシーポリシー</li>
-            </a>
-            <a href="#">
-              <li>ご利用にあたって</li>
-            </a>
-          </ul>
-          <p class="copyRight">© 2018 ShinR25</p>
-          <a href="https://cyberagent-career.jp/recruit/joboffer/84/144894/1865-2524">
-            <img src="images/writer-recruitment.jpg" class="footer_writerRecruit" alt="R25世代のバイブルをつくる 編集スタッフ募集中">
-          </a>
-        </div><!-- #footer_linkWrapper -->
-      </footer>
-    </div><!-- #all_wrapper -->
-
-  </body>
-</html>
+<?php get_footer(); ?>
