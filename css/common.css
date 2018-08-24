@@ -66,7 +66,6 @@ ul{
   font-size:14px;
 }
 
-
 /*共通：アプリダウンロード*/
 #appDownload{
   width:990px;
@@ -155,6 +154,20 @@ ul.footer_linkWrapper_linkList a:not(:first-child){
   color:#fff;
   padding:6px;
   font-weight:700;
+}
+
+.yellow_underLine{
+  font-weight: 700;
+  background:linear-gradient(transparent 80%,#f8e81c 0);
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.skyblue_bold{
+  font-weight: 700;
+  color:#009fac;
 }
 
 /*一覧ボタン*/

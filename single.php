@@ -2,8 +2,11 @@
 <!-- 記事 -->
     <div id="articleWrapper">
       <div id="articleImageWrapper">
-        <?php the_post_thumbnail('single_thumbnail',array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))); ?>
-        <!-- <img src="images/single.jpg"> -->
+        <?php the_post_thumbnail(
+          'single_thumbnail',
+          array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
+         );
+        ?>
       </div><!-- #articleImageWrapper -->
      <div class="articleContentsWrapper">
       <div class="articleHeadingWrapper">
@@ -18,6 +21,19 @@
           <span class="articlePublishdate">2018.05.22  by 新R25編集部</span>
         </div><!-- articleStatusWrapper -->
       </div><!-- articleHeadingWrapper -->
+<!-- 記事本文 -->
+<?php
+if(have_posts()) :
+  while(have_posts()) :
+    the_post();
+?>
+    <div class="singleArticle_content">
+      <?php the_content(); ?>
+    </div>
+<?php
+  endwhile;
+endif;
+?>
 <!-- 単体記事後半部分 -->
      <div class="articleBottom_wrapper">
       <ul class="articleBottom_sns">
