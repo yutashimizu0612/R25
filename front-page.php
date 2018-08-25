@@ -7,33 +7,30 @@
         </div><!-- #home_latestArticleList_header -->
         <div id="home_latestArticleList_wrapper">
           <div class="home_latestArticleList">
+<?php
+$latestArticle_leftPosts = new WP_Query('posts_per_page=3&post_type=post&orderby=date&order=desc');
+if($latestArticle_leftPosts->have_posts()) :
+  while($latestArticle_leftPosts->have_posts()) :
+    $latestArticle_leftPosts->the_post();
+?>
             <div class="home_latestArticleList_item">
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list1.jpg">
+              <a href="<?php the_permalink(); ?>">
+                <?php the_post_thumbnail(
+                      array(200,104),
+                      array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
+                     );
+                    ?>
                 <div class="home_latestArticleList_statusWrapper">
-                  <h3>「#小2の女子」宮川大輔の“足元コーデ”にドン引き… 今週話題のインスタまとめ</h3>
-                  <p>2018.08.12</p>
+                  <h3><?php the_title(); ?></h3>
+                  <p><?php the_time('Y.m.d'); ?></p>
                 </div><!-- home_latestArticleList_statusWrapper -->
               </a>
             </div><!-- home_latestArticleList_item -->
-            <div class="home_latestArticleList_item">
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list2.jpg">
-                <div class="home_latestArticleList_statusWrapper">
-                  <h3>「誠にご苦労様です」ZOZO前澤社長がマスコミに皮肉。今週話題のツイッターまとめ</h3>
-                  <p>2018.08.11</p>
-                </div><!-- home_latestArticleList_statusWrapper -->
-              </a>
-            </div><!-- home_latestArticleList_item -->
-            <div class="home_latestArticleList_item">
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list3.jpg">
-                <div class="home_latestArticleList_statusWrapper">
-                  <h3>世界でたったの3900頭… 野生のトラはなぜ絶滅危惧種になってしまったのか？</h3>
-                  <p>2018.07.27</p>
-                </div><!-- home_latestArticleList_statusWrapper -->
-              </a>
-            </div><!-- home_latestArticleList_item -->
+<?php
+  endwhile;
+endif;
+wp_reset_postdata();
+?>
             <div id="home_latestArticleList_featureBanner">
               <a href="#">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/feature_banner.jpg">
@@ -42,42 +39,30 @@
           </div><!-- .home_latestArticleList -->
 
           <div class="home_latestArticleList">
+<?php
+$latestArticle_rightPosts = new WP_Query('posts_per_page=4&post_type=post&orderby=date&order=desc&offset=3');
+if($latestArticle_rightPosts->have_posts()) :
+  while($latestArticle_rightPosts->have_posts()) :
+    $latestArticle_rightPosts->the_post();
+?>
             <div class="home_latestArticleList_item">
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list1.jpg">
+              <a href="<?php the_permalink(); ?>">
+                <?php the_post_thumbnail(
+                      array(200,104),
+                      array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
+                     );
+                    ?>
                 <div class="home_latestArticleList_statusWrapper">
-                  <h3>「#小2の女子」宮川大輔の“足元コーデ”にドン引き… 今週話題のインスタまとめ</h3>
-                  <p>2018.08.12</p>
+                  <h3><?php the_title(); ?></h3>
+                  <p><?php the_time('Y.m.d'); ?></p>
                 </div><!-- home_latestArticleList_statusWrapper -->
               </a>
             </div><!-- home_latestArticleList_item -->
-            <div class="home_latestArticleList_item">
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list2.jpg">
-                <div class="home_latestArticleList_statusWrapper">
-                  <h3>「誠にご苦労様です」ZOZO前澤社長がマスコミに皮肉。今週話題のツイッターまとめ</h3>
-                  <p>2018.08.11</p>
-                </div><!-- home_latestArticleList_statusWrapper -->
-              </a>
-            </div><!-- home_latestArticleList_item -->
-            <div class="home_latestArticleList_item">
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list3.jpg">
-                <div class="home_latestArticleList_statusWrapper">
-                  <h3>世界でたったの3900頭… 野生のトラはなぜ絶滅危惧種になってしまったのか？</h3>
-                  <p>2018.07.27</p>
-                </div><!-- home_latestArticleList_statusWrapper -->
-              </a>
-            </div><!-- home_latestArticleList_item -->
-            <div class="home_latestArticleList_item">
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/home_latest_article_list3.jpg">
-                <div class="home_latestArticleList_statusWrapper">
-                  <h3>世界でたったの3900頭… 野生のトラはなぜ絶滅危惧種になってしまったのか？</h3>
-                  <p>2018.07.27</p>
-                </div><!-- home_latestArticleList_statusWrapper -->
-              </a>
-            </div><!-- home_latestArticleList_item -->
+<?php
+  endwhile;
+endif;
+wp_reset_postdata();
+?>
           </div><!-- .home_latestArticleList -->
 
         </div><!-- #home_latestArticleList_wrapper -->
@@ -109,7 +94,7 @@ if($asset_management_posts->have_posts()) :
                       array(162,86),
                       array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
                      );
-                  ?>
+                    ?>
                     <span class="number_icon">No.2</span>
                   </div><!-- verticalArticleCard_imageWrapper -->
                   <div class="verticalArticleCard_headingWrapper">
