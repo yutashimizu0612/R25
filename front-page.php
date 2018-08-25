@@ -96,34 +96,35 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/seriesArticle_main.jpg" width="480" height="240">
             </a>
             <div id="home_seriesArticleList">
+<?php
+$asset_management_posts = new WP_Query('posts_per_page=3&post_type=post&orderby=date&order=desc&tag=asset_management');
+if($asset_management_posts->have_posts()) :
+  while($asset_management_posts->have_posts()) :
+    $asset_management_posts->the_post();
+?>
               <div class="verticalArticleCard">
-                <a href="#">
+                <a href="<?php the_permalink(); ?>">
                   <div class="verticalArticleCard_imageWrapper">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/seriesArticle_2.jpg">
+                    <?php the_post_thumbnail(
+                      array(162,86),
+                      array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
+                     );
+                  ?>
                     <span class="number_icon">No.2</span>
                   </div><!-- verticalArticleCard_imageWrapper -->
                   <div class="verticalArticleCard_headingWrapper">
-                    <h3 class="verticalArticleCard_title">資産や収入の何％までならOK？ お金のプロが教える「投資していいお金の上限」</h3>
+                    <h3 class="verticalArticleCard_title"><?php the_title(); ?></h3>
                     <div class="verticalArticleCard_statusWrapper">
-                     <p class="verticalArticleCard_publishdate">2018.07.30</p>
+                     <p class="verticalArticleCard_publishdate"><?php the_time('Y.m.d'); ?></p>
                     </div><!-- verticalArticleCard_statusWrapper -->
                   </div><!-- verticalArticleCard_headingWrapper -->
                 </a>
               </div><!-- verticalArticleCard -->
-              <div class="verticalArticleCard">
-                <a href="#">
-                  <div class="verticalArticleCard_imageWrapper">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/seriesArticle_1.jpg">
-                    <span class="number_icon">No.1</span>
-                  </div><!-- verticalArticleCard_imageWrapper -->
-                  <div class="verticalArticleCard_headingWrapper">
-                    <h3 class="verticalArticleCard_title">いきなり“いい株”を見つけるのは難しい。お金のプロが教える「はじめに買うべき株」</h3>
-                    <div class="verticalArticleCard_statusWrapper">
-                     <p class="verticalArticleCard_publishdate">2018.07.27</p>
-                    </div><!-- verticalArticleCard_statusWrapper -->
-                  </div><!-- verticalArticleCard_headingWrapper -->
-                </a>
-              </div><!-- verticalArticleCard -->
+<?php
+  endwhile;
+endif;
+wp_reset_postdata();
+?>
             </div><!-- #home_seriesArticleList -->
           </div><!-- #home_seriesArticleContent_wrapper -->
         </div><!-- #home_seriesArticle_background -->
@@ -148,7 +149,7 @@ if($business_category_mainPost->have_posts()) :
                       array(436,230),
                       array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
                      );
-                    ?>
+                  ?>
                 </div><!-- home_categoryBlock_mainArticle_imageWrapper -->
                 <div class="home_categoryBlock_mainArticle_headingWrapper">
                   <p class="home_categoryBlock_mainArticle_subtitle">どうすれば相手に「Yes」と言ってもらえるのか</p>
