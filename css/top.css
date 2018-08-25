@@ -36,14 +36,14 @@
   font-size:14px;
 }
 
-#header_image{
+#pickup_imageWrapper{
   float:left;
   width:560px;
   height:294px;
   object-fit:cover;
 }
 
-#pickup_heading{
+#pickup_headingWrapper{
   float:left;
   width:342px;
   height:294px;

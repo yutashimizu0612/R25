@@ -20,24 +20,41 @@
                 'menu_id' => 'headerTop_categoryMenuList',
                 'theme_location' => 'place_global'
                 ));
-                ?>
+              ?>
+<?php
+$home_pickupPost = new WP_Query('posts_per_page=1&post_type=post&orderby=date&order=desc');
+if($home_pickupPost->have_posts()) :
+  while($home_pickupPost->have_posts()) :
+    $home_pickupPost->the_post();
+?>
               <div id="pickup_content" class="clearfix">
-                <a href="#">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/headerimage.jpg" id="header_image">
-                  <div id="pickup_heading">
+                <a href="<?php the_permalink(); ?>">
+                  <div id="pickup_imageWrapper">
+                    <?php the_post_thumbnail(
+                        array(560,294),
+                        array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
+                      );
+                    ?>
+                  </div><!-- #pickup_imageWrapper -->
+                  <div id="pickup_headingWrapper">
                     <p class="pickup_subtitle">
                       日本の朝を変えるために会社を辞めた男
                     </p>
                     <h1 class="pickup_title">
-                      5時こーじが語る「朝活の魅力」が想像以上だった
+                      <?php the_title(); ?>
                     </h1>
                     <ul class="pickup_status">
-                      <li class="pickup_category">ライフスタイル</li>
-                      <li class="pickup_publishdate">2018.08.13</li>
+                      <li class="pickup_category"><?php the_category(); ?></li>
+                      <li class="pickup_publishdate"><?php the_time('Y.m.d'); ?></li>
                     </ul>
-                  </div><!-- #pickup_heading -->
+                  </div><!-- #pickup_headingWrapper -->
                 </a>
               </div><!-- #pickup_content -->
+<?php
+  endwhile;
+endif;
+wp_reset_postdata();
+?>
             </div><!-- #headerTop_content -->
           </div><!-- #headerTop_background -->
       </header>

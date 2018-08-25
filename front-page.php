@@ -8,7 +8,7 @@
         <div id="home_latestArticleList_wrapper">
           <div class="home_latestArticleList">
 <?php
-$latestArticle_leftPosts = new WP_Query('posts_per_page=3&post_type=post&orderby=date&order=desc');
+$latestArticle_leftPosts = new WP_Query('posts_per_page=3&post_type=post&orderby=date&order=desc&offset=1');
 if($latestArticle_leftPosts->have_posts()) :
   while($latestArticle_leftPosts->have_posts()) :
     $latestArticle_leftPosts->the_post();
@@ -18,8 +18,8 @@ if($latestArticle_leftPosts->have_posts()) :
                 <?php the_post_thumbnail(
                       array(200,104),
                       array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
-                     );
-                    ?>
+                    );
+                ?>
                 <div class="home_latestArticleList_statusWrapper">
                   <h3><?php the_title(); ?></h3>
                   <p><?php the_time('Y.m.d'); ?></p>
@@ -40,7 +40,7 @@ wp_reset_postdata();
 
           <div class="home_latestArticleList">
 <?php
-$latestArticle_rightPosts = new WP_Query('posts_per_page=4&post_type=post&orderby=date&order=desc&offset=3');
+$latestArticle_rightPosts = new WP_Query('posts_per_page=4&post_type=post&orderby=date&order=desc&offset=4');
 if($latestArticle_rightPosts->have_posts()) :
   while($latestArticle_rightPosts->have_posts()) :
     $latestArticle_rightPosts->the_post();
@@ -50,8 +50,8 @@ if($latestArticle_rightPosts->have_posts()) :
                 <?php the_post_thumbnail(
                       array(200,104),
                       array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
-                     );
-                    ?>
+                    );
+                ?>
                 <div class="home_latestArticleList_statusWrapper">
                   <h3><?php the_title(); ?></h3>
                   <p><?php the_time('Y.m.d'); ?></p>
