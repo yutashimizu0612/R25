@@ -135,21 +135,42 @@
             <div class="home_categoryBlock_title">
               <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_title_business.png">
             </div><!-- home_categoryBlock_title -->
+<?php
+$business_category_posts = new WP_Query('posts_per_page=1&post_type=post&orderby=menu_order&order=asc&category_name=business');
+if($business_category_posts->have_posts()) :
+  while($business_category_posts->have_posts()) :
+    $business_category_posts->the_post();
+?>
             <div class="home_categoryBlock_mainArticle">
-              <a href="#">
+              <a href="<?php the_permalink(); ?>">
                 <div class="home_categoryBlock_mainArticle_imageWrapper">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_mainArticle_image.jpg">
+                  <?php the_post_thumbnail(
+                      array(436,230),
+                      array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
+                     );
+                    ?>
                 </div><!-- home_categoryBlock_mainArticle_imageWrapper -->
                 <div class="home_categoryBlock_mainArticle_headingWrapper">
                   <p class="home_categoryBlock_mainArticle_subtitle">どうすれば相手に「Yes」と言ってもらえるのか</p>
-                  <h2>脳科学者・中野信子が教える「提案がうまくいくコミュニケーション 3つのポイント」</h2>
+                  <h2><?php the_title(); ?></h2>
                   <div class="home_categoryBlock_mainArticle_statusWrapper">
-                   <p class="home_categoryBlock_publishdate">2018.08.10</p>
+                   <p class="home_categoryBlock_publishdate"><?php the_time('Y.m.d'); ?></p>
                   </div><!-- home_categoryBlock_mainArticle_statusWrapper -->
                 </div><!-- home_categoryBlock_mainArticle_headingWrapper -->
               </a>
             </div><!-- home_categoryBlock_mainArticle -->
+<?php
+  endwhile;
+endif;
+wp_reset_postdata();
+?>
             <div class="home_categoryBlock_articleList">
+<?php
+$business_category_posts = new WP_Query('posts_per_page=3&post_type=post&orderby=menu_order&order=asc&category_name=business');
+if($business_category_posts->have_posts()) :
+  while($business_category_posts->have_posts()) :
+    $business_category_posts->the_post();
+?>
               <div class="home_categoryBlock_articleListItem">
                 <a href="<?php the_permalink(); ?>">
                   <div class="home_categoryBlock_articleListItem_imageWrapper">
@@ -167,35 +188,13 @@
                   </div><!-- home_categoryBlock_articleListItem_headingWrapper -->
                 </a>
               </div><!-- home_categoryBlock_articleListItem -->
-
-              <div class="home_categoryBlock_articleListItem">
-                <a href="#">
-                  <div class="home_categoryBlock_articleListItem_imageWrapper">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_articleListItem2.jpg">
-                  </div><!-- home_categoryBlock_articleListItem_imageWrapper -->
-                  <div class="home_categoryBlock_articleListItem_headingWrapper">
-                    <h3>映画の主人公も、“使命”には途中で気付く。やりたいことがない人のための転職入門</h3>
-                    <div class="home_categoryBlock_articleListItem_statusWrapper">
-                     <p class="home_categoryBlock_publishdate">2018.08.09</p>
-                    </div><!-- home_categoryBlock_articleListItem_statusWrapper -->
-                  </div><!-- home_categoryBlock_articleListItem_headingWrapper -->
-                </a>
-              </div><!-- home_categoryBlock_articleListItem -->
-              <div class="home_categoryBlock_articleListItem">
-                <a href="#">
-                  <div class="home_categoryBlock_articleListItem_imageWrapper">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_articleListItem3.jpg">
-                  </div><!-- home_categoryBlock_articleListItem_imageWrapper -->
-                  <div class="home_categoryBlock_articleListItem_headingWrapper">
-                    <h3>“ブランド人”になりたい編集部員のツイッターを、田端＆箕輪コンビがガチコンサル！</h3>
-                    <div class="home_categoryBlock_articleListItem_statusWrapper">
-                     <p class="home_categoryBlock_publishdate">2018.08.08</p>
-                    </div><!-- home_categoryBlock_articleListItem_statusWrapper -->
-                  </div><!-- home_categoryBlock_articleListItem_headingWrapper -->
-                </a>
-              </div><!-- home_categoryBlock_articleListItem -->
+<?php
+  endwhile;
+endif;
+wp_reset_postdata();
+?>
             </div><!-- home_categoryBlock_articleList -->
-        </div><!-- home_categoryArticle_wrapper -->
+          </div><!-- home_categoryArticle_wrapper -->
             <a href=# class="moreButton">
               <p class="to_list">一覧へ</p>
             </a>
