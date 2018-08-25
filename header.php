@@ -11,25 +11,13 @@
 <!-- 共通ヘッダー（トップページを除く） -->
     <header id="header">
       <div id="header_wrapper">
-        <a href="https://r25.jp/">
+        <a href="<?php echo home_url(); ?>">
           <h2 class="R25_logo">新R25</h2>
         </a>
-        <ul id="header_categoryMenuList">
-          <li>
-            <a href=#>仕事・ビジネス</a>
-          </li>
-          <li>
-            <a href=#>社会・政治</a>
-          </li>
-          <li>
-            <a href=#>経済・マネー</a>
-          </li>
-          <li>
-            <a href=#>芸能・エンタメ</a>
-          </li>
-          <li>
-            <a href=#>ライフスタイル</a>
-          </li>
-        </ul>
+        <?php wp_nav_menu(array(
+          'menu_id' => 'header_categoryMenuList',
+          'theme_location' => 'place_global'
+          ));
+        ?>
       </div>
     </header>

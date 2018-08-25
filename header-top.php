@@ -12,7 +12,7 @@
 <!-- トップページヘッダー -->
       <header id="headerTop">
           <div id="headerTitle">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/mainicon.png" alt="<?php bloginfo('name'); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/mainicon.png" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>">
           </div><!-- #headerTitle -->
           <div id="headerTop_background">
             <div id="headerTop_content">
