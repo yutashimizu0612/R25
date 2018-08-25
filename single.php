@@ -18,7 +18,7 @@
           </h2>
         <div class="articleStatusWrapper">
           <span class="articleCategoryName"><?php the_category(); ?></span>
-          <span class="articlePublishdate">2018.05.22  by 新R25編集部</span>
+          <span class="articlePublishdate"><?php the_time('Y.m.d');?>  by 新R25編集部</span>
         </div><!-- articleStatusWrapper -->
       </div><!-- articleHeadingWrapper -->
 <!-- 記事本文 -->

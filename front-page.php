@@ -151,18 +151,23 @@
             </div><!-- home_categoryBlock_mainArticle -->
             <div class="home_categoryBlock_articleList">
               <div class="home_categoryBlock_articleListItem">
-                <a href="#">
+                <a href="<?php the_permalink(); ?>">
                   <div class="home_categoryBlock_articleListItem_imageWrapper">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_articleListItem1.jpg">
+                    <?php the_post_thumbnail(
+                      array(182,96),
+                      array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
+                     );
+                    ?>
                   </div><!-- home_categoryBlock_articleListItem_imageWrapper -->
                   <div class="home_categoryBlock_articleListItem_headingWrapper">
-                    <h3>「バカにされてもやりたいこと」を選べ。マーケットバリューを高めるキャリアの描き方</h3>
+                    <h3><?php the_title(); ?></h3>
                     <div class="home_categoryBlock_articleListItem_statusWrapper">
-                     <p class="home_categoryBlock_publishdate">2018.08.10</p>
+                     <p class="home_categoryBlock_publishdate"><?php the_time('Y.m.d'); ?></p>
                     </div><!-- home_categoryBlock_articleListItem_statusWrapper -->
                   </div><!-- home_categoryBlock_articleListItem_headingWrapper -->
                 </a>
               </div><!-- home_categoryBlock_articleListItem -->
+
               <div class="home_categoryBlock_articleListItem">
                 <a href="#">
                   <div class="home_categoryBlock_articleListItem_imageWrapper">
