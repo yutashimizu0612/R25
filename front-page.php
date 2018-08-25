@@ -136,10 +136,10 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_title_business.png">
             </div><!-- home_categoryBlock_title -->
 <?php
-$business_category_posts = new WP_Query('posts_per_page=1&post_type=post&orderby=menu_order&order=asc&category_name=business');
-if($business_category_posts->have_posts()) :
-  while($business_category_posts->have_posts()) :
-    $business_category_posts->the_post();
+$business_category_mainPost = new WP_Query('posts_per_page=1&post_type=post&orderby=date&order=desc&category_name=business');
+if($business_category_mainPost->have_posts()) :
+  while($business_category_mainPost->have_posts()) :
+    $business_category_mainPost->the_post();
 ?>
             <div class="home_categoryBlock_mainArticle">
               <a href="<?php the_permalink(); ?>">
@@ -166,10 +166,10 @@ wp_reset_postdata();
 ?>
             <div class="home_categoryBlock_articleList">
 <?php
-$business_category_posts = new WP_Query('posts_per_page=3&post_type=post&orderby=menu_order&order=asc&category_name=business');
-if($business_category_posts->have_posts()) :
-  while($business_category_posts->have_posts()) :
-    $business_category_posts->the_post();
+$business_category_subPosts = new WP_Query('posts_per_page=3&post_type=post&orderby=date&order=desc&category_name=business&offset=1');
+if($business_category_subPosts->have_posts()) :
+  while($business_category_subPosts->have_posts()) :
+    $business_category_subPosts->the_post();
 ?>
               <div class="home_categoryBlock_articleListItem">
                 <a href="<?php the_permalink(); ?>">
