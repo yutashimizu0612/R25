@@ -11,7 +11,7 @@
      <div class="articleContentsWrapper">
       <div class="articleHeadingWrapper">
           <p class="articleSubtitle">
-            「自然体でいたほうが、テレビで長く生き残れる」
+            <?php echo esc_html($post->subtitle); ?>
           </p><!-- articleSubtitle -->
           <h2 class="articleTitle">
             <?php the_title(); ?>

@@ -137,7 +137,7 @@ if($business_category_mainPost->have_posts()) :
                   ?>
                 </div><!-- home_categoryBlock_mainArticle_imageWrapper -->
                 <div class="home_categoryBlock_mainArticle_headingWrapper">
-                  <p class="home_categoryBlock_mainArticle_subtitle">どうすれば相手に「Yes」と言ってもらえるのか</p>
+                  <p class="home_categoryBlock_mainArticle_subtitle"><?php echo esc_html($post->subtitle); ?></p>
                   <h2><?php the_title(); ?></h2>
                   <div class="home_categoryBlock_mainArticle_statusWrapper">
                    <p class="home_categoryBlock_publishdate"><?php the_time('Y.m.d'); ?></p>

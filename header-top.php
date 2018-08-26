@@ -37,9 +37,9 @@ if($home_pickupPost->have_posts()) :
                     ?>
                   </div><!-- #pickup_imageWrapper -->
                   <div id="pickup_headingWrapper">
-                    <p class="pickup_subtitle">
-                      日本の朝を変えるために会社を辞めた男
-                    </p>
+                      <p class="pickup_subtitle">
+                        <?php echo esc_html($post->subtitle); ?>
+                      </p>
                     <h1 class="pickup_title">
                       <?php the_title(); ?>
                     </h1>
