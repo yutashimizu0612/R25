@@ -11,87 +11,33 @@
           </div><!-- #categoryTitle_secondColumn -->
         </div><!-- #categoryTitle_wrapper -->
         <div class="verticalArticleList">
+<?php
+if(have_posts()) :
+  while(have_posts()) :
+    the_post();
+?>
           <div class="verticalArticle">
-            <a href="#">
+            <a href="<?php the_permalink(); ?>">
               <div class="verticalArticle_imageWrapper">
-                <img src="images/categorypage1.jpg">
+                <?php the_post_thumbnail(
+                      array(314,164),
+                      array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
+                    );
+                ?>
               </div><!-- verticalArticle_imageWrapper -->
               <div class="verticalArticle_headingWrapper">
-                <h3 class="verticalArticle_title">自己資産はいくら？ 仮想通貨ブームに乗らなかったR25世代の資産運用状況を調査！</h3>
+                <h3 class="verticalArticle_title"><?php the_title(); ?></h3>
                 <div class="verticalArticle_statusWrapper">
-                  <span class="verticalArticle_publishdate">2018.08.13</span>
+                  <span class="verticalArticle_publishdate"><?php the_time('Y.m.d'); ?></span>
                 </div><!-- verticalArticle_statusWrapper -->
               </div><!-- verticalArticle_headingWrapper -->
             </a>
           </div><!-- verticalArticle -->
-          <div class="verticalArticle">
-            <a href="#">
-              <div class="verticalArticle_imageWrapper">
-                <img src="images/categorypage2.jpg">
-              </div><!-- verticalArticle_imageWrapper -->
-              <div class="verticalArticle_headingWrapper">
-                <h3 class="verticalArticle_title">「25歳で資産運用？ 眠たいこと言うなよ」DMM亀山会長から若者へのお金のアドバイス</h3>
-                <div class="verticalArticle_statusWrapper">
-                  <span class="verticalArticle_publishdate">2018.08.02</span>
-                  <span class="verticalArticle_seriesTitle">マネ凸 　〜マネー賢者に切り込…</span>
-                </div><!-- verticalArticle_statusWrapper -->
-              </div><!-- verticalArticle_headingWrapper -->
-            </a>
-          </div><!-- verticalArticle -->
-          <div class="verticalArticle">
-            <a href="#">
-              <div class="verticalArticle_imageWrapper">
-                <img src="images/categorypage3.jpg">
-              </div><!-- verticalArticle_imageWrapper -->
-              <div class="verticalArticle_headingWrapper">
-                <h3 class="verticalArticle_title">ラクだけど、実は損をしかねない商品ばかりだった！ プロが教える「NG投資信託」</h3>
-                <div class="verticalArticle_statusWrapper">
-                  <span class="verticalArticle_publishdate">2018.08.01</span>
-                </div><!-- verticalArticle_statusWrapper -->
-              </div><!-- verticalArticle_headingWrapper -->
-            </a>
-          </div><!-- verticalArticle -->
-          <div class="verticalArticle">
-            <a href="#">
-              <div class="verticalArticle_imageWrapper">
-                <img src="images/categorypage4.jpg">
-              </div><!-- verticalArticle_imageWrapper -->
-              <div class="verticalArticle_headingWrapper">
-                <h3 class="verticalArticle_title">資産や収入の何％までならOK？ お金のプロが教える「投資していいお金の上限」</h3>
-                <div class="verticalArticle_statusWrapper">
-                  <span class="verticalArticle_publishdate">2018.07.30</span>
-                  <span class="verticalArticle_seriesTitle">新R25投信　～プロが教える資産…</span>
-                </div><!-- verticalArticle_statusWrapper -->
-              </div><!-- verticalArticle_headingWrapper -->
-            </a>
-          </div><!-- verticalArticle -->
-          <div class="verticalArticle">
-            <a href="#">
-              <div class="verticalArticle_imageWrapper">
-                <img src="images/categorypage5.jpg">
-              </div><!-- verticalArticle_imageWrapper -->
-              <div class="verticalArticle_headingWrapper">
-                <h3 class="verticalArticle_title">いきなり“いい株”を見つけるのは難しい。お金のプロが教える「はじめに買うべき株」</h3>
-                <div class="verticalArticle_statusWrapper">
-                  <span class="verticalArticle_publishdate">2018.07.27</span>
-                  <span class="verticalArticle_seriesTitle">新R25投信　～プロが教える資産…</span>
-                </div><!-- verticalArticle_statusWrapper -->
-              </div><!-- verticalArticle_headingWrapper -->
-            </a>
-          </div><!-- verticalArticle -->
-          <div class="verticalArticle">
-            <a href="#">
-              <div class="verticalArticle_imageWrapper">
-                <img src="images/categorypage5.jpg">
-              </div><!-- verticalArticle_imageWrapper -->
-              <div class="verticalArticle_headingWrapper">
-                <h3 class="verticalArticle_title">儲かった人っているの？ 「よしもと仮想通貨ブームの今」をかまいたちに聞いてきた</h3>
-                <div class="verticalArticle_statusWrapper">
-                  <span class="verticalArticle_publishdate">2018.06.19</span>
-                </div><!-- verticalArticle_statusWrapper -->
-              </div><!-- verticalArticle_headingWrapper -->
-            </a>
-          </div><!-- verticalArticle -->
+<?php
+  endwhile;
+endif;
+wp_reset_postdata();
+?>
         </div><!-- verticalArticleList -->
       </div><!-- #categoryArticleList_wrapper -->
 <!-- カテゴリーページ_新着記事リスト -->
