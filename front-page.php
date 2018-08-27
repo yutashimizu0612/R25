@@ -116,74 +116,77 @@ wp_reset_postdata();
       </div><!-- #home_seriesArticle_wrapper -->
 <!-- トップページカテゴリー別 -->
       <div id="home_category_wrapper">
+<?php
+$category_name = array('business','society','money','entertainment','life');//スラッグを使用してループ。カテゴリー別に#categoryBlockを生成する
+foreach($category_name as $value):
+  $category_mainPost = new WP_Query('posts_per_page=1&post_type=post&orderby=date&order=desc&category_name=$value');
+  if($category_mainPost->have_posts()) :
+    while($category_mainPost->have_posts()) :
+      $category_mainPost->the_post();
+?>
         <div class="home_categoryBlock">
           <div class="home_categoryArticle_wrapper">
             <div class="home_categoryBlock_title">
               <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_title_business.png">
             </div><!-- home_categoryBlock_title -->
-<?php
-$business_category_mainPost = new WP_Query('posts_per_page=1&post_type=post&orderby=date&order=desc&category_name=business');
-if($business_category_mainPost->have_posts()) :
-  while($business_category_mainPost->have_posts()) :
-    $business_category_mainPost->the_post();
-?>
-            <div class="home_categoryBlock_mainArticle">
-              <a href="<?php the_permalink(); ?>">
-                <div class="home_categoryBlock_mainArticle_imageWrapper">
-                  <?php the_post_thumbnail(
-                      array(436,230),
-                      array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
-                     );
-                  ?>
-                </div><!-- home_categoryBlock_mainArticle_imageWrapper -->
-                <div class="home_categoryBlock_mainArticle_headingWrapper">
-                  <p class="home_categoryBlock_mainArticle_subtitle"><?php echo esc_html($post->subtitle); ?></p>
-                  <h2><?php the_title(); ?></h2>
-                  <div class="home_categoryBlock_mainArticle_statusWrapper">
-                   <p class="home_categoryBlock_publishdate"><?php the_time('Y.m.d'); ?></p>
-                  </div><!-- home_categoryBlock_mainArticle_statusWrapper -->
-                </div><!-- home_categoryBlock_mainArticle_headingWrapper -->
-              </a>
-            </div><!-- home_categoryBlock_mainArticle -->
-<?php
-  endwhile;
-endif;
-wp_reset_postdata();
-?>
-            <div class="home_categoryBlock_articleList">
-<?php
-$business_category_subPosts = new WP_Query('posts_per_page=3&post_type=post&orderby=date&order=desc&category_name=business&offset=1');
-if($business_category_subPosts->have_posts()) :
-  while($business_category_subPosts->have_posts()) :
-    $business_category_subPosts->the_post();
-?>
-              <div class="home_categoryBlock_articleListItem">
+              <div class="home_categoryBlock_mainArticle">
                 <a href="<?php the_permalink(); ?>">
-                  <div class="home_categoryBlock_articleListItem_imageWrapper">
+                  <div class="home_categoryBlock_mainArticle_imageWrapper">
                     <?php the_post_thumbnail(
-                      array(182,96),
-                      array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
-                     );
+                        array(436,230),
+                        array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
+                       );
                     ?>
-                  </div><!-- home_categoryBlock_articleListItem_imageWrapper -->
-                  <div class="home_categoryBlock_articleListItem_headingWrapper">
-                    <h3><?php the_title(); ?></h3>
-                    <div class="home_categoryBlock_articleListItem_statusWrapper">
+                  </div><!-- home_categoryBlock_mainArticle_imageWrapper -->
+                  <div class="home_categoryBlock_mainArticle_headingWrapper">
+                    <p class="home_categoryBlock_mainArticle_subtitle"><?php echo esc_html($post->subtitle); ?></p>
+                    <h2><?php the_title(); ?></h2>
+                    <div class="home_categoryBlock_mainArticle_statusWrapper">
                      <p class="home_categoryBlock_publishdate"><?php the_time('Y.m.d'); ?></p>
-                    </div><!-- home_categoryBlock_articleListItem_statusWrapper -->
-                  </div><!-- home_categoryBlock_articleListItem_headingWrapper -->
+                    </div><!-- home_categoryBlock_mainArticle_statusWrapper -->
+                  </div><!-- home_categoryBlock_mainArticle_headingWrapper -->
                 </a>
-              </div><!-- home_categoryBlock_articleListItem -->
-<?php
-  endwhile;
-endif;
-wp_reset_postdata();
-?>
-            </div><!-- home_categoryBlock_articleList -->
-          </div><!-- home_categoryArticle_wrapper -->
-            <a href=# class="moreButton">
-              <p class="to_list">一覧へ</p>
-            </a>
-        </div><!-- home_categoryBlock -->
+              </div><!-- home_categoryBlock_mainArticle -->
+  <?php
+    endwhile;
+  endif;
+  wp_reset_postdata();
+  ?>
+              <div class="home_categoryBlock_articleList">
+  <?php
+  $category_subPosts = new WP_Query('posts_per_page=3&post_type=post&orderby=date&order=desc&category_name=$value&offset=1');
+  if($category_subPosts->have_posts()) :
+    while($category_subPosts->have_posts()) :
+      $category_subPosts->the_post();
+  ?>
+                <div class="home_categoryBlock_articleListItem">
+                  <a href="<?php the_permalink(); ?>">
+                    <div class="home_categoryBlock_articleListItem_imageWrapper">
+                      <?php the_post_thumbnail(
+                        array(182,96),
+                        array('alt' => the_title_attribute('echo=0'),'title' => the_title_attribute('echo=0'))
+                       );
+                      ?>
+                    </div><!-- home_categoryBlock_articleListItem_imageWrapper -->
+                    <div class="home_categoryBlock_articleListItem_headingWrapper">
+                      <h3><?php the_title(); ?></h3>
+                      <div class="home_categoryBlock_articleListItem_statusWrapper">
+                       <p class="home_categoryBlock_publishdate"><?php the_time('Y.m.d'); ?></p>
+                      </div><!-- home_categoryBlock_articleListItem_statusWrapper -->
+                    </div><!-- home_categoryBlock_articleListItem_headingWrapper -->
+                  </a>
+                </div><!-- home_categoryBlock_articleListItem -->
+  <?php
+    endwhile;
+  endif;
+  wp_reset_postdata();
+  ?>
+              </div><!-- home_categoryBlock_articleList -->
+            </div><!-- home_categoryArticle_wrapper -->
+              <a href=# class="moreButton">
+                <p class="to_list">一覧へ</p>
+              </a>
+          </div><!-- home_categoryBlock -->
+<?php endforeach; ?>
       </div><!-- #home_category_wrapper -->
 <?php get_footer(); ?>

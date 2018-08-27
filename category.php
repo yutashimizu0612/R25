@@ -73,7 +73,7 @@ if($latestArticlePosts->have_posts()) :
                 </h3>
                 <div class="verticalArticle_statusWrapper">
                   <span class="verticalArticle_categoryName"><?php the_category(); ?></span>
-                  <span class="verticalArticle_publishdate"><?php the_time(); ?></span>
+                  <span class="verticalArticle_publishdate"><?php the_time('Y.m.d'); ?></span>
                 </div><!-- verticalArticle_statusWrapper -->
               </div><!-- verticalArticle_headingWrapper -->
             </a>
