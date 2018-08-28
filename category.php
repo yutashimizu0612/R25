@@ -45,6 +45,14 @@ endif;
 wp_reset_postdata();
 ?>
         </div><!-- verticalArticleList -->
+<!-- ページャーの表示 -->
+        <div class="pageNavi_wrapper">
+<?php
+  if(function_exists('page_navi')) :
+    page_navi('elm_class=page_navi&edge_type=link');
+  endif;
+?>
+      </div><!-- pageNavi_wrapper -->
       </div><!-- #categoryArticleList_wrapper -->
 <!-- カテゴリーページ_新着記事リスト -->
       <div id="categoryPage_latestArticleList_wrapper">
