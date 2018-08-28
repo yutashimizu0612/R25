@@ -117,9 +117,9 @@ wp_reset_postdata();
 <!-- トップページカテゴリー別 -->
       <div id="home_category_wrapper">
 <?php
-$category_name = array('business','society','money','entertainment','life');//スラッグを使用してループ。カテゴリー別に#categoryBlockを生成する
-foreach($category_name as $value):
-  $category_mainPost = new WP_Query('posts_per_page=1&post_type=post&orderby=date&order=desc&category_name=$value');
+$category_names = array('business','society','money','entertainment','life');//スラッグを使用してループ。カテゴリー別に#categoryBlockを生成する
+foreach($category_names as $category_name):
+  $category_mainPost = new WP_Query('posts_per_page=1&post_type=post&orderby=date&order=desc&category_name='.$category_name);
   if($category_mainPost->have_posts()) :
     while($category_mainPost->have_posts()) :
       $category_mainPost->the_post();
@@ -154,7 +154,7 @@ foreach($category_name as $value):
   ?>
               <div class="home_categoryBlock_articleList">
   <?php
-  $category_subPosts = new WP_Query('posts_per_page=3&post_type=post&orderby=date&order=desc&category_name=$value&offset=1');
+  $category_subPosts = new WP_Query('posts_per_page=3&post_type=post&orderby=date&order=desc&offset=1&category_name='.$category_name);
   if($category_subPosts->have_posts()) :
     while($category_subPosts->have_posts()) :
       $category_subPosts->the_post();
