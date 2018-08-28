@@ -127,7 +127,7 @@ foreach($category_names as $category_name):
         <div class="home_categoryBlock">
           <div class="home_categoryArticle_wrapper">
             <div class="home_categoryBlock_title">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_title_business.png">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home_categoryBlock_title_<?php echo $category_name; ?>.png">
             </div><!-- home_categoryBlock_title -->
               <div class="home_categoryBlock_mainArticle">
                 <a href="<?php the_permalink(); ?>">
