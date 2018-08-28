@@ -183,7 +183,7 @@ foreach($category_names as $category_name):
   ?>
               </div><!-- home_categoryBlock_articleList -->
             </div><!-- home_categoryArticle_wrapper -->
-              <a href=# class="moreButton">
+              <a href="http://orangeferret5.sakura.ne.jp/wp/archives/category/<?php echo $category_name; ?>/" class="moreButton">
                 <p class="to_list">一覧へ</p>
               </a>
           </div><!-- home_categoryBlock -->
