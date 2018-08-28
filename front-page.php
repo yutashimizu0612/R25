@@ -124,6 +124,7 @@ foreach($category_names as $category_name):
     while($category_mainPost->have_posts()) :
       $category_mainPost->the_post();
 ?>
+       <div class="home_categoryBlock_background">
         <div class="home_categoryBlock">
           <div class="home_categoryArticle_wrapper">
             <div class="home_categoryBlock_title">
@@ -187,6 +188,7 @@ foreach($category_names as $category_name):
                 <p class="to_list">一覧へ</p>
               </a>
           </div><!-- home_categoryBlock -->
+        </div><!-- home_categoryBlock_background -->
 <?php endforeach; ?>
       </div><!-- #home_category_wrapper -->
 <?php get_footer(); ?>

@@ -186,13 +186,17 @@
 /*トップページカテゴリー*/
 /*全体*/
 #home_category_wrapper{
-  width:990px;
-  margin:0 auto;
   margin-top:60px;
+}
+
+.home_categoryBlock_background:nth-child(2n){
+  background-color:#f8f8f8;
 }
 
 /*カテゴリー別*/
 .home_categoryBlock{
+  width:990px;
+  margin:0 auto;
   padding:40px 0;
 }
 
