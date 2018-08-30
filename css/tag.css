@@ -30,6 +30,10 @@
   margin-top:32px;
 }
 
+.seriesArticleListItem:not(:first-child){
+  margin-top:24px;
+}
+
 .seriesArticleListItem a{
   display:flex;
   align-items:center;

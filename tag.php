@@ -36,6 +36,11 @@
           </li>
         </ul>
       <div id="seriesArticleList">
+<?php
+if(have_posts()) :
+  while(have_posts()) :
+    the_post();
+?>
         <div class="seriesArticleListItem">
           <a href="<?php the_permalink(); ?>">
             <div class="seriesArticleListItem_imageWrapper">
@@ -55,6 +60,11 @@
             </div>
           </a>
         </div><!-- seriesArticleList_item -->
+<?php
+  endwhile;
+endif;
+wp_reset_postdata();
+?>
       </div><!-- #seriesArticleList -->
     </div><!-- #seriesArticle_contents -->
   </div><!-- #seriesArticle_wrapper -->
