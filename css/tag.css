@@ -1,0 +1,51 @@
+
+#seriesArticle_wrapper{
+  width:680px;
+  margin:0 auto;
+}
+
+#seriesArticle_imageWrapper img{
+  width:680px;
+  height:356px
+}
+
+#seriesArticle_contents{
+  padding:40px 20px 80px;
+}
+
+#seriesArticle_summary{
+  margin-bottom:40px;
+}
+
+.seriesArticle_title{
+  font-size:16px;
+}
+
+.seriesArticle_description{
+  margin-top:12px;
+  line-height:1.5;
+}
+
+#seriesArticleList{
+  margin-top:32px;
+}
+
+.seriesArticleListItem a{
+  display:flex;
+  align-items:center;
+}
+
+.seriesArticleListItem_headingWrapper{
+  margin-left:24px;
+}
+
+.seriesArticleListItem_title{
+  font-size:16px;
+  line-height:1.5;
+}
+
+.seriesArticleListItem_publishdate{
+  color:#767676;
+  margin-top:8px;
+  font-size:14px;
+}

@@ -36,7 +36,7 @@ endif;
 ?>
 <!-- 単体記事後半部分 -->
      <div class="articleBottom_wrapper">
-      <ul class="articleBottom_sns">
+      <ul class="snsBar">
         <li>
           <a href=#>
             <img src="<?php echo get_template_directory_uri(); ?>/images/f-ogo_RGB_HEX-58.svg">

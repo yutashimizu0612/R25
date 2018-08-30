@@ -3,11 +3,6 @@
   text-align:center;
 }
 
-/*#articleImageWrapper img{
-  width:680px;
-  height:356px;
-}*/
-
 .articleContentsWrapper{
   width:680px;
   margin:0 auto;
@@ -46,35 +41,6 @@
 /*単体記事後半部分*/
 .articleBottom_wrapper{
   padding:20px 20px 0;
-}
-
-.articleBottom_sns{
-  font-size:0;
-}
-
-.articleBottom_sns li{
-  display:inline-block;
-  width:24%;
-  position:relative;
-}
-
-.articleBottom_sns li:not(:first-child){
-  margin-left:8px;
-}
-
-.articleBottom_sns li img{
-  width:20px;
-  height:20px;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-}
-
-.articleBottom_sns li a{
-  display:block;
-  height:56px;
-  border:1px solid #dcdcdc;
 }
 
 .articleBottom_catchWrapper{

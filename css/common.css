@@ -191,6 +191,37 @@ ul.footer_linkWrapper_linkList a:not(:first-child){
   font-weight:700;
 }
 
+/*SNSバー*/
+ul.snsBar{
+  font-size:0;
+}
+
+ul.snsBar li{
+  display:inline-block;
+  width:24%;
+  position:relative;
+}
+
+ul.snsBar li:not(:first-child){
+  margin-left:8px;
+}
+
+ul.snsBar li a{
+  display:block;
+  height:56px;
+  border:1px solid #dcdcdc;
+  border-radius:4px;
+}
+
+ul.snsBar li img{
+  width:20px;
+  height:20px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
 /*縦記事（小）*/
 .verticalArticleCard{
   width:162px;

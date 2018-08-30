@@ -71,13 +71,13 @@ wp_reset_postdata();
       <div id="home_seriesArticle_wrapper">
         <div id="home_seriesArticle_header">
           <span class="whiteTitle">連載記事</span>
-          <a href="#">
+          <a href="<?php echo get_tag_link(12); ?>">
             <p class="to_list">一覧へ</p>
           </a>
         </div><!-- #home_seriesArticle_header -->
         <div id="home_seriesArticle_background">
           <div id="home_seriesArticleContent_wrapper">
-            <a href="#">
+            <a href="<?php echo get_tag_link(12); ?>">
               <img src="<?php echo get_template_directory_uri(); ?>/images/seriesArticle_main.jpg" width="480" height="240">
             </a>
             <div id="home_seriesArticleList">
