@@ -55,10 +55,10 @@ wp_reset_postdata();
       </div><!-- pageNavi_wrapper -->
       </div><!-- #categoryArticleList_wrapper -->
 <!-- カテゴリーページ_新着記事リスト -->
-      <div id="categoryPage_latestArticleList_wrapper">
-        <div id="categoryPage_latestArticleList_titleWrapper">
+      <div id="latestArticleList_wrapper">
+        <div id="latestArticleList_titleWrapper">
           <span class="whiteTitle">新着記事</span>
-        </div><!-- #categoryPage_latestArticleList_titleWrapper -->
+        </div><!-- #latestArticleList_titleWrapper -->
         <div class="verticalArticleList">
 <?php
 $latestArticlePosts = new WP_Query('posts_per_page=6&post_type=post&orderby=date&order=desc');
@@ -95,6 +95,6 @@ wp_reset_postdata();
           <a href=# class="moreButton">
             <p class="to_list">一覧へ</p>
           </a>
-      </div><!-- #categoryPage_latestArticleList_wrapper -->
+      </div><!-- #latestArticleList_wrapper -->
     </div><!-- #categoryPage_contentWrapper -->
 <?php get_footer(); ?>

@@ -222,6 +222,18 @@ ul.snsBar li img{
   transform:translate(-50%,-50%);
 }
 
+/*トップページ以外の新着記事リスト*/
+.latestArticleList_background{
+  background-color:#f8f8f8;
+}
+
+.latestArticleList_wrapper{
+  width:990px;
+  margin:0 auto;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
 /*縦記事（小）*/
 .verticalArticleCard{
   width:162px;

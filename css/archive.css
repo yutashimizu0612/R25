@@ -66,10 +66,3 @@ li.before,li.after{
   background-color:#f8f8f8;
   color:#1a1a1a;
 }
-
-/*カテゴリーページ_新着記事リスト*/
-#categoryPage_latestArticleList_wrapper{
-  background-color:#f8f8f8;
-  padding-top:40px;
-  padding-bottom:40px;
-}
