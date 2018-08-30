@@ -3,6 +3,10 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p,a,blockquote, pre, img,
   padding:0;
 }
 
+body{
+  line-height:1.5;
+}
+
 a{
   text-decoration:none;
   cursor:pointer;
@@ -313,4 +317,9 @@ ul.snsBar li img{
   font-size:14px;
   margin-top:4px;
   color:#767676;
+  display:flex;
+}
+
+.verticalArticle_publishdate{
+  margin-left:12px;
 }
