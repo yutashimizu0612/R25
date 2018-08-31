@@ -3,7 +3,9 @@
       <div id="home_latestArticle_wrapper" class="clearfix">
         <div id="home_latestArticleList_header">
           <span class="whiteTitle">新着記事</span>
-          <p class="to_list">一覧へ</p>
+          <a href="http://orangeferret5.sakura.ne.jp/wp/allcategory/">
+            <p class="to_list">一覧へ</p>
+          </a>
         </div><!-- #home_latestArticleList_header -->
         <div id="home_latestArticleList_wrapper">
           <div class="home_latestArticleList">

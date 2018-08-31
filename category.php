@@ -92,7 +92,7 @@ endif;
 wp_reset_postdata();
 ?>
         </div><!-- verticalArticleList -->
-          <a href=# class="moreButton">
+          <a href="http://orangeferret5.sakura.ne.jp/wp/allcategory/" class="moreButton">
             <p class="to_list">一覧へ</p>
           </a>
       </div><!-- #latestArticleList_wrapper -->
