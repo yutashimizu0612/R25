@@ -34,9 +34,38 @@
 /*記事本文*/
 .singleArticle_content{
   font-size:18px;
-  margin-top:20px;
+}
+
+.singleArticle_content p{
+  margin-top:32px;
   padding:0 20px;
 }
+
+.singleArticle_content img{
+  margin-top:32px;
+}
+
+.subHeading{
+  background-color:#fce9e8;
+  font-size:18px;
+  padding:16px;
+  margin-top:36px;
+}
+
+.yellow_underLine{
+  font-weight: 700;
+  background:linear-gradient(transparent 80%,#f8e81c 0);
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.skyblue_bold{
+  font-weight: 700;
+  color:#009fac;
+}
+
 
 /*単体記事後半部分*/
 .articleBottom_wrapper{

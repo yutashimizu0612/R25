@@ -11,3 +11,9 @@ register_nav_menus(
     'place_global' => 'グローバル'
   )
 );
+
+//記事本文の画像をpタグで囲わない
+function remove_p_on_images($content){
+  return preg_replace('/<p>(\s*)(<img .* \/>)(\s*)<\/p>/iU', '\2', $content);
+}
+add_filter('the_content','remove_p_on_images');
