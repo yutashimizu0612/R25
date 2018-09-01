@@ -20,7 +20,7 @@
             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FshinR25%2F&tabs=timeline&width=340&height=121&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="340" height="121" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
           </div>
           <div id="footer_twitter">
-            <a href="https://twitter.com/shin_R25?ref_src=twsrc%5Etfw" class="twitter-follow-button" width="340px" height="44px" data-show-count="false">新R25をフォローする</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a href="https://twitter.com/shin_R25?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">新R25をフォローする</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
         </div><!-- #footer_snsWrapper -->
         <div id="footer_linkWrapper">
