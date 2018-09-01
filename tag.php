@@ -15,22 +15,22 @@
       </div><!-- #seriesArticle_summary -->
       <ul class="snsBar">
           <li>
-            <a href=#>
+            <a href="#">
               <img src="<?php echo get_template_directory_uri(); ?>/images/f-ogo_RGB_HEX-58.svg">
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <img src="<?php echo get_template_directory_uri(); ?>/images/icons8-twitter-48.png">
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <img src="<?php echo get_template_directory_uri(); ?>/images/LINE_SOCIAL_Fukidashi_typeA.png">
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <img src="<?php echo get_template_directory_uri(); ?>/images/hatenabookmark-logomark.svg">
             </a>
           </li>

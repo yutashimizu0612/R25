@@ -2,9 +2,7 @@
 /**
 * Template Name:全カテゴリーを表示
 */
-?>
-
-<?php get_header(); ?>
+get_header(); ?>
     <div id="allLatestArticle_wrapper">
       <div class="latestArticleList_titleWrapper">
         <span class="whiteTitle">新着記事</span>
