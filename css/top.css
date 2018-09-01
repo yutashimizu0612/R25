@@ -1,0 +1,273 @@
+/*トップページのヘッダー*/
+#headerTitle{
+  height:136px;
+  text-align:center;
+}
+
+#headerTitle img{
+  margin-top:28px;
+  margin-right:30px;
+}
+
+#headerTop_background{
+  background-color:#e1180d;
+  width:100%;
+  height:288px;
+}
+
+#headerTop_content{
+  width:990px;
+  margin:0 auto;
+}
+
+#headerTop_categoryMenuList{
+  text-align:center;
+}
+
+#headerTop_categoryMenuList li{
+  display:inline-block;
+  margin-left:36px;
+  padding:21px 0;
+}
+
+#headerTop_categoryMenuList li a{
+  text-decoration:none;
+  color:#fff;
+  font-size:14px;
+}
+
+#pickup_content a{
+  display:block;
+}
+
+#pickup_imageWrapper{
+  float:left;
+  width:560px;
+  height:294px;
+  object-fit:cover;
+}
+
+#pickup_headingWrapper{
+  float:left;
+  width:342px;
+  height:294px;
+  padding-right:48px;
+  padding-left:40px;
+  background-color:#fff;
+}
+
+.pickup_subtitle{
+  margin-top:56px;
+  color:#e1180d;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.pickup_title{
+  margin-top:11px;
+  font-size:30px;
+  line-height:1.23;
+}
+
+.pickup_status{
+  margin-top:15px;
+}
+
+.pickup_status li{
+  float:left;
+  font-size:14px;
+  color:#767676;
+}
+
+.pickup_publishdate{
+  margin-left:12px;
+}
+
+/*トップページ新着記事*/
+#home_latestArticle_wrapper{
+  width:990px;
+  margin:0 auto;
+  padding-top:120px;
+}
+
+#home_latestArticleList_header{
+  position:relative;
+}
+
+#home_latestArticleList_header p{
+  position:absolute;
+  top:5px;
+  left:400px;
+}
+
+.home_latestArticleList{
+  float:left;
+  width:465px;
+}
+
+.home_latestArticleList:nth-child(2){
+  margin-left:60px;
+}
+
+.home_latestArticleList_item{
+  margin-top:24px;
+}
+
+.home_latestArticleList_item img{
+  width:200px;
+  height:104px;
+}
+
+.home_latestArticleList_statusWrapper{
+  float:right;
+  width:249px;
+  padding-top:5px;
+}
+
+.home_latestArticleList_statusWrapper h3{
+  font-size:16px;
+}
+
+.home_latestArticleList_statusWrapper p{
+  font-size:12px;
+  color:#767676;
+  margin-top:8px;
+}
+
+#home_latestArticleList_featureBanner{
+  margin-top:20px;
+}
+
+#home_latestArticleList_featureBanner img{
+  width:465px;
+}
+
+/*トップページ連載記事*/
+#home_seriesArticle_wrapper{
+  padding-top:40px;
+}
+
+#home_seriesArticle_header,#home_seriesArticleContent_wrapper{
+  width:990px;
+  margin:0 auto;
+}
+
+#home_seriesArticle_header{
+  position:relative;
+}
+
+#home_seriesArticle_header p{
+  position:absolute;
+  top:5px;
+  right:15px;
+}
+
+#home_seriesArticle_background{
+  background-color:#3B33B8;
+  width:100%;
+  height:240px;
+}
+
+#home_seriesArticleContent_wrapper{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#home_seriesArticleList{
+  display:flex;
+}
+
+#home_seriesArticleList .verticalArticleCard{
+  margin-left:12px;
+}
+
+/*トップページカテゴリー*/
+/*全体*/
+#home_category_wrapper{
+  margin-top:60px;
+}
+
+.home_categoryBlock_background:nth-child(2n){
+  background-color:#f8f8f8;
+}
+
+/*カテゴリー別*/
+.home_categoryBlock{
+  width:990px;
+  margin:0 auto;
+  padding:40px 0;
+}
+
+.home_categoryArticle_wrapper{
+  display:flex;
+}
+
+/*カテゴリー別メイン記事*/
+.home_categoryBlock_mainArticle{
+  width:436px;
+  margin-left:36px;
+}
+
+.home_categoryBlock_mainArticle_imageWrapper img{
+  width:436px;
+  height:230px;
+}
+
+.home_categoryBlock_mainArticle_headingWrapper h2{
+  font-size:20px;
+  margin-top:8px;
+}
+
+.home_categoryBlock_mainArticle_subtitle{
+  font-size:14px;
+  font-weight:700;
+  color:#e1180d;
+  margin-top:16px;
+}
+
+/*カテゴリー別記事リスト*/
+.home_categoryBlock_articleList{
+  width:398px;
+  margin-left:24px;
+}
+
+.home_categoryBlock_articleListItem{
+  display:block;
+  width:398px;
+  height:96px;
+}
+
+.home_categoryBlock_articleList .home_categoryBlock_articleListItem:nth-of-type(n+2){
+  padding-top:24px;
+}
+
+.home_categoryBlock_articleListItem_imageWrapper{
+  float:left;
+  width:182px;
+  height:96px;
+}
+
+.home_categoryBlock_articleListItem_imageWrapper img{
+  width:182px;
+  height:96px;
+}
+
+.home_categoryBlock_articleListItem_headingWrapper{
+  float:right;
+  width:200px;
+  margin-left:10px;
+}
+
+.home_categoryBlock_articleListItem_headingWrapper h3{
+  font-size:14px;
+  line-height:1.33;
+}
+
+/*トップページカテゴリーブロック内共通*/
+.home_categoryBlock_publishdate{
+  font-size:14px;
+  color:#767676;
+  margin-top:8px;
+}

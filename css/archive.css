@@ -1,0 +1,27 @@
+/*カテゴリーページ_カテゴリーリスト*/
+#categoryPage_contentWrapper{
+  width:990px;
+  margin:0 auto;
+}
+
+#categoryArticleList_wrapper{
+  padding-top:40px;
+  padding-bottom:80px;
+}
+
+#categoryTitle_wrapper{
+  margin-bottom:16px;
+}
+
+#categoryTitle_secondColumn{
+  margin-top:4px;
+}
+
+.categoryTitle{
+  background-color:black;
+  color:#fff;
+  font-size:33px;
+  font-weight:500;
+  padding:4px;
+  letter-spacing:-1px;
+}

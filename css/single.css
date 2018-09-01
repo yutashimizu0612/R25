@@ -1,0 +1,206 @@
+/*単体記事ページ ヘッダー*/
+#articleImageWrapper{
+  text-align:center;
+}
+
+.articleContentsWrapper{
+  width:680px;
+  margin:0 auto;
+}
+
+.articleHeadingWrapper{
+  padding:20px 20px 0;
+}
+
+.articleSubtitle{
+  color:#e1180d;
+  font-size:16px;
+  font-weight:700;
+  line-height:1.5;
+}
+
+.articleTitle{
+  font-size:34px;
+  line-height:1.33;
+  margin-top:12px;
+}
+
+.articleStatusWrapper{
+  margin-top:12px;
+  color:#767676;
+  font-size:14px;
+}
+
+/*記事本文*/
+.singleArticle_content{
+  font-size:18px;
+}
+
+.singleArticle_content p{
+  margin-top:32px;
+  padding:0 20px;
+}
+
+.singleArticle_content img{
+  margin-top:32px;
+}
+
+.subHeading{
+  background-color:#fce9e8;
+  font-size:18px;
+  padding:16px;
+  margin-top:36px;
+}
+
+.yellow_underLine{
+  font-weight: 700;
+  background:linear-gradient(transparent 80%,#f8e81c 0);
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.skyblue_bold{
+  font-weight: 700;
+  color:#009fac;
+}
+
+.image_description{
+  color:#767676;
+  font-size:14px;
+  margin-top:12px;
+}
+
+/*記事本文_吹き出し*/
+.balloon {
+margin-bottom: 2em;
+position: relative;
+display:flex;
+}
+.balloon:before,.balloon:after {
+clear: both;
+content: "";
+display: block;
+}
+
+.balloon_imageWrapper {
+margin-right: 20px;
+}
+.balloon_textWrapper {
+margin-left: 20px;
+}
+.balloon_imageWrapper img {
+width: 50px;
+height: 50px;
+margin: 0;
+}
+.balloon_image_description {
+padding: 5px 0 0;
+font-size: 14px;
+text-align: center;
+}
+.ballon_comment {
+position: relative;
+padding-top: 20px;
+padding-bottom: 20px;
+border: 1px solid;
+max-width: -webkit-calc(100% - 120px);
+max-width: calc(100% - 120px);
+display: inline-block;
+}
+.ballon_comment {
+border-color: #aaa;
+}
+.ballon_comment {
+border-color: #aaa;
+}
+
+.balloon p {
+margin: 0 0 20px;
+}
+.balloon p:last-child {
+margin-bottom: 0;
+}
+/* 三角部分 */
+.ballon_comment:before {
+position: absolute;
+content: '';
+border: 10px solid transparent;
+border-right: 10px solid #aaa;
+top: 15px;
+left: -20px;
+}
+.ballon_comment:after {
+position: absolute;
+content: '';
+border: 10px solid transparent;
+border-right: 10px solid #fff;
+top: 15px;
+left: -19px;
+}
+.ballon_comment:before {
+position: absolute;
+content: '';
+border: 10px solid transparent;
+border-left: 10px solid #aaa;
+top: 15px;
+right: -20px;
+}
+.ballon_comment:after {
+position: absolute;
+content: '';
+border: 10px solid transparent;
+border-left: 10px solid #fff;
+top: 15px;
+right: -19px;
+}
+
+/*単体記事後半部分*/
+.articleBottom_wrapper{
+  padding:20px 20px 0;
+}
+
+.articleBottom_catchWrapper{
+  text-align:center;
+  margin-top:24px;
+}
+
+.articleBottom_R25Logo{
+  font-size:25px;
+  font-weight:900;
+  color:#F70000;
+}
+
+.articleBottom_catch{
+  font-size:16px;
+  margin-left:12px;
+  font-weight:700;
+}
+
+.articleBottom_marketing{
+  margin-top:24px;
+  font-size:0;
+}
+
+.articleBottom_marketing li{
+  display:inline-block;
+  width:49.3%;
+}
+
+.articleBottom_marketing li a{
+  display:block;
+  height:56px;
+  line-height:56px;
+  text-align:center;
+  background-color:#f8f8f8
+}
+
+.articleBottom_marketing li:not(:first-child){
+  margin-left:8px;
+}
+
+.articleBottom_marketing .articleBottom_marketing_linkText{
+  font-size:14px;
+  font-weight:700;
+}
