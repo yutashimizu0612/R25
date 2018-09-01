@@ -105,11 +105,13 @@ ul{
   padding-top:40px;
   padding-bottom:80px;
   text-align:center;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
 }
 
 #footer_snsWrapper{
   width:340px;
-  display:inline-block;
 }
 
 #footer_snsWrapper p{
@@ -117,10 +119,22 @@ ul{
   font-weight:700;
 }
 
+#footer_facebook{
+  margin-top:12px;
+}
+
+#footer_twitter{
+  margin-top:12px;
+}
+
+#footer_twiiter a{
+  display:block;
+}
+
 #footer_linkWrapper{
   width:340px;
-  display:inline-block;
   text-align:left;
+  margin-left:40px;
 }
 
 #footer_linkTitle{
